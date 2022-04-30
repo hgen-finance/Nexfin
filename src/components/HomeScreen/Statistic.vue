@@ -193,12 +193,10 @@ export default {
       items: [
         { name: "BuyBack", count: 3 },
         { name: "Marketing", count: 2 },
-        { name: "Burn", count: 3 },
       ],
       items2: [
         { name: "BuyBack", count: 3 },
-        { name: "Rewards", count: 5 },
-        { name: "Burn", count: 3 },
+        { name: "Marketing", count: 2 },
       ],
       radius: [],
       stroke: 12,
