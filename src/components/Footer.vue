@@ -43,11 +43,8 @@
               class="h-fix-15-S h-fix-55-XS"
             />
           </a>
-          <a href="" class="mx-4-S mx-10-XS hv ts-3 op-7">
-            <img src="@/assets/svg/reddit.svg" class="h-fix-15-S h-fix-55-XS" />
-          </a>
           <a
-            href="https://discord.com/invite/D6s7Dj3cjt"
+            href="https://discord.gg/kmc8QUX3Jx"
             class="mx-4-S mx-10-XS hv ts-3 op-7"
           >
             <img
