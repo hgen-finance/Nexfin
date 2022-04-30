@@ -45,17 +45,15 @@
         <div
           class="w-100 fd-r-S fd-c-XS mt-0-L mt-0-M mt-5-S pt-6-M pt-0-S pt-6-XS d-f-S d-n-XS"
         >
-          <AmButton color="mcolor-100" bColor="mcolor-100" opacityEffect>
-            More info
-          </AmButton>
           <AmButton
-            class="ml-3-S ml-0-XS"
-            color="mcolor-200"
+            class=""
+            color="mcolor-100"
             bColor="mcolor-100"
             colorText="mcolor-300"
             opacityEffect
+            link="https://hgen-finance.medium.com"
           >
-            NEXFIN story on <span class="fw-800">Medium</span>
+            HGEN story on <span class="fw-800">Medium</span>
           </AmButton>
         </div>
       </div>
