@@ -1,0 +1,451 @@
+<template>
+  <div
+    class="w-100 br-6 gradient-2000 rad-fix-8 p-8-S p-20-XS shadow-purple-100"
+  >
+    <div class="w-100" :class="{ 'op-0': getLoading }">
+      <div
+        class="w-100 fs-8-S fs-25-XS fw-600 f-white-200 pb-4-S pb-15-XS ta-c-XS"
+      >
+        Borrow
+      </div>
+      <div class="w-100" v-if="getTotalNotifications > 0">
+        <NotificaitonsTx />
+      </div>
+      <div class="w-100 fs-5-S fs-20-XS f-gray-500 pb-1-S pb-5-XS ta-c-XS">
+        Your Current Debt
+      </div>
+      <div
+        class="w-100 fs-7-S fs-20-XS f-white-200 ta-c-XS pb-2-S pb-10-XS ta-c-XS mb-10-XS fw-600"
+      >
+        <span class="fs-7-S fs-25-XS f-mcolor-100 fw-800">{{ getDebt }}</span>
+        <span class="mr-1"> GENS </span>(<span class="fw-800 f-mcolor-100">
+          {{ getRatio }}
+        </span>
+        <span class="fw-600 pr-1">% </span>CR)
+      </div>
+      <div class="w-100 fd-r-S fd-r-XS mcolor-1000 bs-sb-all rad-fix-3">
+        <div class="w-50-S w-100-XS">
+          <AmButton
+            color="mcolor-1000"
+            bColor="mcolor-1000"
+            full
+            opacityEffect
+            scaleEffect
+            disableShadow
+            v-if="!getBorrowOrPay"
+            @click="changeBorrowOrPayFunc"
+          >
+            Borrow
+          </AmButton>
+          <AmButton
+            color="gradient-5000"
+            bColor="gradient-5000"
+            colorText="white-200"
+            full
+            disabled
+            v-if="getBorrowOrPay"
+          >
+            Borrow
+          </AmButton>
+        </div>
+        <div class="w-50-S w-100-XS">
+          <AmButton
+            color="gradient-5001"
+            bColor="gradient-5001"
+            colorText="white-200"
+            full
+            disabled
+            v-if="!getBorrowOrPay"
+          >
+            Pay Debt
+          </AmButton>
+          <AmButton
+            color=""
+            bColor="mcolor-1000"
+            full
+            opacityEffect
+            scaleEffect
+            disableShadow
+            v-if="getBorrowOrPay"
+            @click="changeBorrowOrPayFunc"
+          >
+            Pay Debt
+          </AmButton>
+        </div>
+      </div>
+
+      <div
+        class="w-100 mt-4 mb-2 mcolor-700 rad-fix-2 px-4-S px-10-XS py-3-S py-10-XS"
+        v-if="getBorrowOrPay"
+      >
+        <div class="w-100 fs-5-S fs-20-XS f-gray-600 pb-1-S pb-5-XS">
+          Set amount of collateral
+        </div>
+        <div class="w-100 fd-r ai-c">
+          <span class="w-15-S w-25-XS fs-6-S fs-20-XS fw-600 f-white-200 fsh-0"
+            >SOL</span
+          >
+          <input
+            type="text"
+            class="w-100 mx-1 white-100 br-0 oul-n fs-6-S fs-20-XS fw-600 f-mcolor-300"
+            placeholder="0.0000"
+            v-model="from"
+            maxlength="12"
+          />
+          <span
+            class="fs-5-S fs-20-XS f-mcolor-500 fw-500 ts-3 hv d-n-XS fsh-0 mcolor-500 px-3 py-1 rad-fix-3"
+            @click="setMax"
+            >max</span
+          >
+        </div>
+      </div>
+      <div
+        class="w-100 mb-4 mcolor-700 rad-fix-2 px-4-S px-10-XS py-3-S py-10-XS"
+        v-if="getBorrowOrPay"
+      >
+        <div class="w-100 fs-5-S fs-20-XS f-gray-600 pb-1-S pb-5-XS">
+          Amount received
+        </div>
+        <div class="w-100 fd-r ai-c">
+          <span class="w-15-S w-25-XS fs-6-S fs-20-XS fw-600 f-white-200 fsh-0"
+            >GENS</span
+          >
+          <input
+            type="text"
+            class="w-100 mx-1 white-100 br-0 oul-n fs-6-S fs-20-XS fw-600 f-mcolor-300"
+            placeholder="0"
+            v-model="to"
+            maxlength="20"
+          />
+        </div>
+      </div>
+      <div class="w-100 fd-r-S fd-c-XS mt-0-S mt-15-XS" v-if="getBorrowOrPay">
+        <div class="w-50-S w-100-XS mr-2-L mr-2-S mr-0-XS">
+          <AmButton
+            color="mcolor-200"
+            bColor="mcolor-100"
+            opacityEffect
+            full
+            @click="reset"
+          >
+            reset
+          </AmButton>
+        </div>
+        <div class="w-50-S w-100-XS ml-2-L ml-2-S ml-0-XS mt-0-S mt-8-XS">
+          <AmButton
+            color="mcolor-100"
+            bColor="mcolor-100"
+            opacityEffect
+            full
+            @click="confirmFunc"
+          >
+            confirm
+          </AmButton>
+        </div>
+      </div>
+
+      <!-- This section for the pay debt  -->
+      <div
+        class="w-100 mt-4 mb-4 mcolor-700 rad-fix-2 px-4-S px-10-XS py-3-S py-10-XS"
+        v-if="!getBorrowOrPay"
+      >
+        <div class="w-100 fs-5-S fs-20-XS f-gray-600 pb-1-S pb-5-XS">
+          Set amount of repayment
+        </div>
+        <div class="w-100 fd-r ai-c">
+          <span class="w-15-S w-25-XS fs-6-S fs-20-XS fw-600 f-white-200 fsh-0"
+            >GENS</span
+          >
+          <input
+            type="text"
+            class="w-100 mx-1 white-100 br-0 oul-n fs-6-S fs-20-XS fw-600 f-mcolor-300"
+            placeholder="0"
+            v-model="repayTo"
+            maxlength="12"
+          />
+          <span
+            class="fs-5-S fs-20-XS f-mcolor-500 fw-500 ts-3 hv d-n-XS fsh-0 mcolor-500 px-3 py-1 rad-fix-3"
+            @click="setMaxGens"
+            >max</span
+          >
+        </div>
+      </div>
+
+      <!-- for sol -->
+      <div
+        class="w-100 mt-4 mb-4 mcolor-700 rad-fix-2 px-4-S px-10-XS py-3-S py-10-XS"
+        v-if="!getBorrowOrPay"
+      >
+        <div class="w-100 fs-5-S fs-20-XS f-gray-600 pb-1-S pb-5-XS">
+          Amount you want to receive in SOL
+        </div>
+        <div class="w-100 fd-r ai-c">
+          <span class="w-15-S w-25-XS fs-6-S fs-20-XS fw-600 f-white-200 fsh-0"
+            >SOL</span
+          >
+          <input
+            type="text"
+            class="w-100 mx-1 white-100 br-0 oul-n fs-6-S fs-20-XS fw-600 f-mcolor-300"
+            placeholder="0"
+            v-model="repaySol"
+            maxlength="12"
+          />
+        </div>
+      </div>
+
+      <!-- for collateral ratio   -->
+      <div
+        class="w-100 mt-4 mb-2 mcolor-500 rad-fix-2 px-4-S px-10-XS py-3-S py-10-XS"
+        v-if="!getBorrowOrPay"
+      >
+        <div class="w-100 fs-5-S fs-20-XS f-gray-600 pb-1-S pb-5-XS">
+          Collateral Ratio
+        </div>
+        <div class="w-100 fd-r ai-c">
+          <input
+            type="text"
+            class="w-100 mx-1 white-100 br-0 oul-n fs-6-S fs-20-XS fw-600 f-mcolor-300"
+            placeholder="0"
+            v-model="collateralRatio"
+            maxlength="12"
+            disabled
+          />
+          <span class="f-white-200 fs-6 fw-500">%</span>
+        </div>
+      </div>
+
+      <div class="w-100 mb-3-S d-f jc-r" v-if="!getBorrowOrPay">
+        <span
+          class="fs-5-S fw-500 fs-20-XS f-mcolor-500 ts-3 hv d-n-XS fsh-0 mcolor-500 px-3-S px-5-XS py-2-S py-5-XS rad-fix-3"
+          @click="closeTroveFunc"
+          >Close Borrow</span
+        >
+      </div>
+
+      <div class="w-100 fd-r-S fd-c-XS mt-0-S mt-15-XS" v-if="!getBorrowOrPay">
+        <div class="w-50-S w-100-XS mr-2-L mr-2-S mr-0-XS">
+          <AmButton
+            color="mcolor-200"
+            bColor="mcolor-100"
+            opacityEffect
+            full
+            @click="resetPay"
+          >
+            reset
+          </AmButton>
+        </div>
+        <div class="w-50-S w-100-XS ml-2-L ml-2-S ml-0-XS mt-0-S mt-8-XS">
+          <AmButton
+            color="mcolor-100"
+            bColor="mcolor-100"
+            opacityEffect
+            full
+            @click="payTroveFunc"
+          >
+            confirm
+          </AmButton>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 h-100 p-a l-0 t-0 fd-r ai-c jc-c" v-if="getLoading">
+      <Loading />
+    </div>
+  </div>
+</template>
+
+<script>
+import Loading from "@/components/Loading";
+import { getCollateral } from "@/utils/layout";
+import NotificaitonsTx from "@/components/NotificationTx.vue";
+
+export default {
+  components: {
+    Loading,
+    NotificaitonsTx,
+  },
+  data() {
+    return {
+      from: null,
+      to: null,
+      repayTo: null, // this.$accessor.borrowing.trove.amountToClose, // TO DO change this later
+      repaySol: null,
+      repayCr: null,
+      mint: "",
+      borrow: 0,
+      depositAmount: 0,
+      debtAmout: 0,
+      borrowVal: 0,
+      TotalNotificationTx: 0,
+    };
+  },
+  computed: {
+    getUsd() {
+      return this.$accessor.usd || 0;
+    },
+    getGensBalance() {
+      return this.$accessor.wallet.balanceGENS || 0;
+    },
+    getLoading() {
+      return this.$accessor.borrowing.loading;
+    },
+    getIsBorrow() {
+      return this.$accessor.borrowing.troveId;
+    },
+    getDebt() {
+      //   return this.$accessor.borrowing.debt || 0;
+
+      return Number(this.$accessor.borrowing.trove.amountToClose) || "0";
+    },
+    getBorrowAmount() {
+      return this.$accessor.borrowing.trove.amountToClose || 0;
+    },
+    getBorrowOrPay() {
+      return this.$accessor.borrowing.borrowOrPay;
+    },
+    getPrice() {
+      return this.$store.state.usd;
+    },
+    getRatio() {
+      return this.$accessor.borrowing.trove.amountToClose > 0
+        ? getCollateral(
+            this.$accessor.borrowing.trove.amountToClose.toString(),
+            this.$accessor.borrowing.trove.lamports.toString(),
+            parseInt(this.$accessor.usd).toString()
+          )
+        : 0;
+    },
+    getTotalNotifications() {
+      return this.$accessor.notification.totalNotificaitons;
+    },
+
+    collateralRatio: {
+      get: function () {
+        let result;
+        if (this.$accessor.borrowing.trove.amountToClose > 0) {
+          result = getCollateral(
+            (
+              this.$accessor.borrowing.trove.amountToClose - this.repayTo
+            ).toString(),
+            (
+              this.$accessor.borrowing.trove.lamports -
+              this.repaySol * 1000000000
+            ).toString(),
+            parseInt(this.$accessor.usd).toString()
+          );
+        } else {
+          result = 0;
+        }
+        this.repayCr = result;
+
+        return result;
+      },
+      set: function (newVal) {},
+    },
+  },
+  watch: {
+    from(val) {
+      if (val) {
+        this.from = val.toString().replace(/[^+\d\.]/g, "");
+        if (this.from.split(".").length > 2)
+          this.from = this.from.replace(/\.(?=[^\.]*$)/, "");
+      }
+
+      //   this.to = Math.round(
+      //     Math.round(Number(this.from) * this.getUsd) / 2.5
+      //   ).toString();
+      this.$emit("sol", this.from);
+      this.$accessor.borrowing.getDebt({ from: this.from, to: this.to });
+    },
+    to(val) {
+      if (val) {
+        this.to = val.toString().replace(/[^+\d]/g, "");
+        if (this.to.length > 1 && this.to.substr(0, 1) === "0") {
+          this.to = 1;
+        }
+      }
+      this.$emit("gens", this.to);
+      this.$accessor.borrowing.getDebt({ from: this.from, to: this.to });
+    },
+    repayTo(val) {
+      this.$emit("repay", this.repayTo);
+      this.$accessor.borrowing.closeBorrowAmount({ repayTo: val });
+    },
+    repaySol(val) {
+      //   this.$emit("repaySol", this.repaySol);
+      this.$emit("repaySol", this.repaySol);
+    },
+    repayCr(val) {
+      this.$emit("cr", this.repayCr);
+      this.$accessor.borrowing.currentCollateralRatio(val);
+    },
+  },
+  methods: {
+    setMaxGens() {
+      let user_gens_balance = this.getGensBalance; // gens balance in the wallet
+      if (user_gens_balance < this.getDebt) {
+        this.repayTo = user_gens_balance;
+      } else {
+        this.repayTo = this.getDebt;
+      }
+    },
+    setMax() {
+      this.from = this.$accessor.wallet.balance
+        ? this.$accessor.wallet.balance - 1
+        : 0;
+    },
+    reset() {
+      this.from = null;
+      this.to = null;
+      this.mint = null;
+    },
+    resetPay() {
+      this.repayTo = null;
+    },
+    confirmFunc() {
+      if (Number(this.from) > 0) {
+        this.$accessor.borrowing.confirmBorrow({
+          from: this.from,
+          to: this.to,
+          mint: "EdvHEGQ2sqC4ZofLpj2xE5BQefgewWFY5nHe9aMcReC1",
+        });
+        this.from = null;
+        this.to = null;
+        //this.mint = null;
+      }
+    },
+    closeTroveFunc() {
+      this.repayTo = this.$accessor.borrowing.trove.amountToClose;
+      if (this.getGensBalance >= this.repayTo) {
+        this.$accessor.borrowing.closeTrove({
+          mint: "EdvHEGQ2sqC4ZofLpj2xE5BQefgewWFY5nHe9aMcReC1",
+          amount: this.repayTo,
+        });
+        this.form = null;
+        this.to = null;
+        this.repayTo = 0;
+        //this.mint = null;
+      }
+    },
+    payTroveFunc() {
+      if (
+        this.getGensBalance >= this.repayTo &&
+        this.collateralRatio > 109 &&
+        this.repayTo > 0
+      ) {
+        this.$accessor.borrowing.payTrove({
+          mint: "EdvHEGQ2sqC4ZofLpj2xE5BQefgewWFY5nHe9aMcReC1",
+          amount: this.repayTo,
+          lamports: this.repaySol * 1000000000,
+        });
+      }
+    },
+    // For updating the borrow or pay
+    changeBorrowOrPayFunc() {
+      this.$accessor.borrowing.changeBorrowOrPay(
+        this.$accessor.borrowing.borrowOrPay
+      );
+    },
+  },
+  mounted() {},
+};
+</script>
