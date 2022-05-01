@@ -65,17 +65,17 @@ export default {
             "An Honor of The Russel B. Scott Award in 2015 for innovative compact hydrogen liquefier design",
           ],
         },
-        {
-          img: "advisor2.png",
-          name: "Dr. William Notardonato",
-          position: "Technical Advisor",
-          text: [
-            "The Founder and CEO of Eta Space LLC in Florida, The USA",
-            "Chief Engineer and Cryogenic Fuel System Manager at NASA Kennedy Space Center",
-            "An IAS (Institute of Advanced Studies) Western Australia University Fellow Professor",
-            "A World Class  Engineer in Liquid Hydrogen and Oxygen Management",
-          ],
-        },
+        // {
+        //   img: "advisor2.png",
+        //   name: "Dr. William Notardonato",
+        //   position: "Technical Advisor",
+        //   text: [
+        //     "The Founder and CEO of Eta Space LLC in Florida, The USA",
+        //     "Chief Engineer and Cryogenic Fuel System Manager at NASA Kennedy Space Center",
+        //     "An IAS (Institute of Advanced Studies) Western Australia University Fellow Professor",
+        //     "A World Class  Engineer in Liquid Hydrogen and Oxygen Management",
+        //   ],
+        // },
       ],
     };
   },
