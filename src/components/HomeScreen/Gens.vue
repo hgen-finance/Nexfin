@@ -22,6 +22,7 @@
           opacityEffect
           scaleEffect
           class="ml-2 ml-0-XS mt-0-S mt-10-XS fw-600"
+          link="https://dev.hgen.finance/borrowing"
         >
           <div class="w-100 tt-n fs-6-S fs-18-XS fw-600">Buy $GENS</div>
         </AmButton>

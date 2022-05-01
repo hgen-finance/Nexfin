@@ -103,7 +103,7 @@ export default {
     return {
       items: [
         { title: "Beginners Guide", to: "/" },
-        { title: "Documentation", to: "/" },
+        { title: "Documentation", to: "https;//docs.hgen.finance" },
       ],
       languages: {
         theme: "default",
