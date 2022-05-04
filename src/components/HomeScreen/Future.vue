@@ -49,7 +49,7 @@
             class=""
             color="mcolor-100"
             bColor="mcolor-100"
-            colorText="mcolor-300"
+            colorText="mcolor-400"
             opacityEffect
             link="https://hgen-finance.medium.com"
           >

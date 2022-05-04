@@ -22,15 +22,15 @@
                 v-if="getLogo"
             /></nuxt-link>
           </div>
-          <nuxt-link
+          <a
             class="w-a f-gray-600 fw-500 fs-5-M fs-7-S fs-25-XS link hv ts-3 mr-4 my-0-S my-10-XS"
             v-for="(item, i) in items"
             :key="i"
-            :to="item.to"
+            :href="item.to"
             @click="togglemenu"
           >
             {{ item.title }}
-          </nuxt-link>
+          </a>
           <nuxt-link
             class="w-a f-gray-600 fw-500 fs-5-M fs-7-S fs-25-XS link hv ts-3 mr-4 my-0-S my-10-XS"
             :to="{ path: '/', hash: '#tokenomics' }"
@@ -102,8 +102,11 @@ export default {
   data() {
     return {
       items: [
-        { title: "Beginners Guide", to: "/" },
-        { title: "Documentation", to: "https;//docs.hgen.finance" },
+        {
+          title: "Beginners Guide",
+          to: "https://docs.hgen.finance/beginners-guide",
+        },
+        { title: "Documentation", to: "https://docs.hgen.finance" },
       ],
       languages: {
         theme: "default",
