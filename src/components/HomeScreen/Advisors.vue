@@ -12,17 +12,21 @@
         v-for="(item, i) in items"
         :key="i"
       >
-        <img
-          :src="require('@/assets/svg/nasa-logo.png')"
-          class="z-12 w-fix-40-M w-fix-45-S w-fix-100-XS p-a b-90-S b-90-XS my-logo-align"
-        />
+        <div v-if="item.logo">
+          <img
+            :src="require('@/assets/svg/' + item.logo)"
+            class="z-12 w-fix-40-M w-fix-45-S w-fix-100-XS p-a b-90-S b-90-XS my-logo-align"
+          />
+        </div>
         <div
           class="w-20-S w-60-XS h-fix-95-M h-fix-s-150-XS brs-s br-mcolor-100 shadow-purple-100 ovh rad-fix-6"
         >
-          <img
-            :src="require('@/assets/advisors/' + item.img)"
-            class="w-100 h-100min"
-          />
+          <div v-if="item.img">
+            <img
+              :src="require('@/assets/advisors/' + item.img)"
+              class="w-100 h-100min"
+            />
+          </div>
         </div>
         <div class="w-80-S w-100-XS mx-5-S">
           <div
@@ -55,15 +59,42 @@ export default {
       items: [
         {
           img: "advisor1.png",
+          logo: "nasa-logo.png",
           name: "Dr. Jong H. Baik",
-          position: "Chief of the  Advisory Board",
+          position: "Director of Hydrogen Technology",
           text: [
-            "A World Class Engineer  with 30 years of hydrogen liquefaction and storage expertise with mostly  NASA in the US  and S. Korea agencies such as KIST",
-            "The founder of MetaVista USA providing total liquid hydrogen energy solution various applications",
-            "Contribution to the IRAS thermal management technology for the world largest liquid hydrogen storage tank (1.25 million gallons) at NASA Kennedy Space Center",
-            "Technical partner of NASA’s Moon to Mars exploration approach to develop a LOX/LH2 propellant system",
-            "An Honor of The Russel B. Scott Award in 2015 for innovative compact hydrogen liquefier design",
+            "Liquid hydrogen technology expert with 25+ years of R&D experience",
+            "Working with the US / international laboratories & government energy and space agencies",
+            "Intensive technology evaluation on hydrogen value-chain companies including production, transfer storage for ground, aerial, sea and space application",
           ],
+        },
+        {
+          img: "",
+          name: "David Eunsung So",
+          position: "Chief Executive Officer",
+          text: [
+            "Marketing Specialist & Business Developer with 20 years of experience in the U.S. & Korea",
+            "An expert of R&D Coordinator, Tech and Market Trend Analysis",
+            "Founding Member & CEO of Hydrogen Energy Company, H2Prime Inc.",
+            "A Member of Hydrogen Energy Ambassador Council",
+          ],
+        },
+        {
+          img: "",
+          name: "Jonas Jonghyeon Kim",
+          position: "Director of Strategy",
+          text: [
+            "Ananda Nirvana Kapital, Partner",
+            "Das-Kapital(HG Ventures), Partner",
+            "Fortune Korea, Europe Correspondent",
+            "Atomrigs Lab, Marketer & BD",
+          ],
+        },
+        {
+          img: "",
+          name: "Preeyash Pradhan",
+          position: "Director of Block-Chain Technology",
+          text: ["Full-stack and Blockchain Engineer with 5+ years experience"],
         },
         // {
         //   img: "advisor2.png",
