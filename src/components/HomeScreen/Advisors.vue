@@ -69,7 +69,7 @@ export default {
           ],
         },
         {
-          img: "",
+          img: "david.jpeg",
           name: "David Eunsung So",
           position: "Chief Executive Officer",
           text: [
@@ -80,7 +80,7 @@ export default {
           ],
         },
         {
-          img: "",
+          img: "advisor3.jpeg",
           name: "Jonas Jonghyeon Kim",
           position: "Director of Strategy",
           text: [
