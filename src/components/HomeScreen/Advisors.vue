@@ -91,7 +91,7 @@ export default {
           ],
         },
         {
-          img: "",
+          img: "user.png",
           name: "Preeyash Pradhan",
           position: "Director of Block-Chain Technology",
           text: ["Full-stack and Blockchain Engineer with 5+ years experience"],
