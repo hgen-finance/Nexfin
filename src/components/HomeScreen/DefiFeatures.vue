@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-20-M pt-20-S pt-40-XS mb-0-S mb-10-XS">
+  <div class="container pt-20-M pt-20-S pt-40-XS mb-0-S mb-10-XS jc-c fd-c">
     <div
       class="w-100 tt-u fs-17-S fs-30-XS fw-800 f-white-200 ta-c glow"
       data-aos="zoom-in"
@@ -20,7 +20,13 @@
     >
       $HGEN DeFi Platform
     </div> -->
-
+    <div class="w-100 mt-4-S mt-10-XS fs-8-S fs-25-XS fw-800 f-white-200 ta-c">
+      <i
+        >Deposit your fund to HGEN, and then HGEN will use that fund to lend to
+        hydrogen projects. You do not just have a token. You become a real
+        investor with HGEN.</i
+      >
+    </div>
     <div
       class="w-100 pt-30-XS fd-r jc-c px-0-M pt-5-S pb-0-S px-20-XS"
       data-aos="fade"
