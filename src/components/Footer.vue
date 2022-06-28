@@ -44,7 +44,7 @@
             />
           </a>
           <a
-            href="https://discord.gg/kmc8QUX3Jx"
+            href="https://discord.gg/MuDrrpV7MT"
             class="mx-4-S mx-10-XS hv ts-3 op-7"
           >
             <img
