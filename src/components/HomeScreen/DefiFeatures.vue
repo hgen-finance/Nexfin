@@ -1,7 +1,7 @@
 <template>
   <div class="container pt-20-M pt-20-S pt-40-XS mb-0-S mb-10-XS jc-c fd-c">
     <div
-      class="w-100 tt-u fs-17-S fs-30-XS fw-800 f-white-200 ta-c glow"
+      class="w-100 tt-u fs-17-S fs-30-XS fw-800  ta-c glow"
       data-aos="zoom-in"
     >
       <i>Growth With Purpose</i>
@@ -12,7 +12,7 @@
         pt-6-M pt-4-S pt-15-XS
         fs-8-S fs-20-XS
         fw-600
-        f-white-200
+        
         ta-c
       "
       data-aos="zoom-in"
@@ -20,7 +20,7 @@
     >
       $HGEN DeFi Platform
     </div> -->
-    <div class="w-100 mt-4-S mt-10-XS fs-8-S fs-25-XS fw-800 f-white-200 ta-c">
+    <div class="w-100 mt-4-S mt-10-XS fs-8-S fs-25-XS fw-800  ta-c">
       <i
         >Deposit your fund to HGEN, and then HGEN will use that fund to lend to
         hydrogen projects. You do not just have a token. You become a real
@@ -39,7 +39,7 @@
           data-aos-ease="ease"
           data-aos-delay="200"
         >
-          <div class="w-100 f-white-200 mb-5-S mb-10-XS">
+          <div class="w-100 mb-5-S mb-10-XS">
             We have a strong integrated solution to bring our world to DeFi
             online platform, greatly reduces risks and environmental pollution,
             and results in more reliable power through the utilization of
@@ -70,16 +70,16 @@
             class="w-fix-40-M w-fix-45-S w-fix-100-XS p-a r-0 b-90-S b-90-XS"
           /> -->
           <div
-            class="w-100 fs-8-M fs-10-S fs-25-XS f-white-200 fw-600"
+            class="w-100 fs-8-M fs-10-S fs-25-XS  fw-600"
             v-html="item.name"
           />
           <p
             v-html="item.text"
-            class="f-white-200 pt-3-S pt-10-XS fs-5-M fs-8-S fs-18-XS"
+            class="pt-3-S pt-10-XS fs-5-M fs-8-S fs-18-XS"
           />
           <div class="w-100 pt-4-S pt-10-XS">
             <div
-              class="w-100 fd-r ai-t py-2-M py-3-S py-5-XS fs-5-M fs-8-S fs-18-XS f-white-200"
+              class="w-100 fd-r ai-t py-2-M py-3-S py-5-XS fs-5-M fs-8-S fs-18-XS"
               v-for="(item2, i2) in item.items"
               :key="i2"
             >

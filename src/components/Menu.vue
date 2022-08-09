@@ -4,7 +4,7 @@
       class="w-100 w-100-XS h-a-S h-100-XS fd-r py-3-S py-5-XS px-10 z-10 bs-menu"
     >
       <span
-        class="w-100 h-100 p-f t-0 gradient-400 d-n-S ts-3"
+        class="w-100 h-100 p-f t-0 gradient-200 d-n-S ts-3"
         :class="{ 'l-100': !open, 'l-0': open }"
       />
       <div
@@ -49,9 +49,10 @@
         </div>
         <div class="w-a-S w-100-XS fsh-0 px-0-S px-20-XS">
           <AmButton
-            color="mcolor-100"
+            color="gradient-5002"
             opacityEffect
             scaleEffect
+            disableShadow
             :full="mobile"
             link="https://dev.hgen.finance"
             v-if="!publicKey"
