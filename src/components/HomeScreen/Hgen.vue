@@ -17,13 +17,13 @@
       </div>
       <div class="w-20-S w-100-XS">
         <AmButton
-          color="mcolor-100"
-          bColor="mcolor-100"
+          color="gradient-5002"
+          bColor="gradient-5002"
           opacityEffect
           scaleEffect
           class="ml-2 ml-0-XS mt-0-S mt-10-XS fw-600"
         >
-          <div class="w-100 tt-n fs-6-S fs-18-XS fw-600">Buy $HGEN</div>
+          <div class="w-100 tt-n fs-6-S fs-18-XS fw-600">Buy HGEN</div>
         </AmButton>
       </div>
     </div>
@@ -103,7 +103,7 @@
       <div
         class="
           w-100
-          shadow-purple-200
+          shadow-cyan-200
           rad-fix-6
           pt-30-XS pt-10-S
           pb-30-XS pb-10-S

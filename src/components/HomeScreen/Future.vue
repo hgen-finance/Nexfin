@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-8-L pt-8-M pt-15-S pt-20-XS px-20-XS">
+  <div class="container pt-8-L pt-8-M pt-15-S pt-20-XS px-20-XS mb-40-S">
     <div
       class="w-100 fd-r-S fd-c-XS ai-c jc-l-S jc-c-XS rad-fix-8 px-14-S px-20-XS py-10-S py-20-XS"
     >
@@ -41,8 +41,11 @@
       </div>
       <!-- <img src="@/static/future.png" class="w-40-S w-80-XS p-a-S p-r-XS l-55-S l-0-XS t-a-S t-fix-5-XS" /> -->
     </div>
+    
   </div>
 </template>
+<script>
+</script>
 <style lang="scss" scoped>
 #tsparticles {
   position: absolute;

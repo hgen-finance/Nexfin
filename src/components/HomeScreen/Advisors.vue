@@ -19,7 +19,7 @@
           />
         </div>
         <div
-          class="w-20-S w-60-XS h-fix-95-M h-fix-s-150-XS brs-s br-mcolor-100 shadow-purple-100 ovh rad-fix-6"
+          class="w-20-S w-60-XS h-fix-95-M h-fix-s-150-XS brs-s br-mcolor-100 shadow-cyan-200 ovh rad-fix-6"
         >
           <div v-if="item.img">
             <img
@@ -35,7 +35,7 @@
             {{ item.name }}
           </div>
           <div
-            class="w-100 fs-6-M fs-8-S fs-20-XS fw-600 ta-l pb-2-S pb-5-XS pt-0-S pt-10-XS f-mcolor-100 tt-u"
+            class="w-100 fs-6-M fs-8-S fs-20-XS fw-600 ta-l pb-2-S pb-5-XS pt-0-S pt-10-XS f-cyan-400 tt-u"
           >
             {{ item.position }}
           </div>
@@ -140,7 +140,7 @@ ul li:before {
   content: "▹";
   position: absolute;
   left: 0px;
-  color: purple;
+  color: cyan;
 }
 
 .my-logo-align {

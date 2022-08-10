@@ -17,14 +17,14 @@
       </div>
       <div class="w-20-S w-100-XS">
         <AmButton
-          color="mcolor-100"
-          bColor="mcolor-100"
+          color="gradient-5002"
+          bColor="gradient-5002"
           opacityEffect
           scaleEffect
           class="ml-2 ml-0-XS mt-0-S mt-10-XS fw-600"
           link="https://dev.hgen.finance/borrowing"
         >
-          <div class="w-100 tt-n fs-6-S fs-18-XS fw-600">Buy $GENS</div>
+          <div class="w-100 tt-n fs-6-S fs-18-XS fw-600">Buy GENS</div>
         </AmButton>
       </div>
     </div>

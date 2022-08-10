@@ -18,7 +18,7 @@
             /> -->
           </div>
           <div
-            class="w-100 fs-5-S fs-18-XS fw-600 f-gray-700 pt-3-S pt-10-XS ta-l-S ta-c-XS"
+            class="w-100 fs-5-S fs-18-XS fw-600 f-white-200 pt-3-S pt-10-XS ta-l-S ta-c-XS"
           >
             Copyright © {{ new Date().getFullYear() }} HGEN Finance All rights
             reserved.

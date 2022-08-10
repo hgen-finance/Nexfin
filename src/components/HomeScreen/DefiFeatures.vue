@@ -1,11 +1,5 @@
 <template>
-  <div class="container pt-20-M pt-20-S pt-40-XS mb-0-S mb-10-XS jc-c fd-c">
-    <div
-      class="w-100 tt-u fs-17-S fs-30-XS fw-800  ta-c glow"
-      data-aos="zoom-in"
-    >
-      <i>Growth With Purpose</i>
-    </div>
+  <div class="container pt-20-M pt-20-S mb-0-S mb-10-XS jc-c fd-c">
     <!-- <div
       class="
         w-100
@@ -20,57 +14,156 @@
     >
       $HGEN DeFi Platform
     </div> -->
-    <div class="w-100 mt-4-S mt-10-XS fs-8-S fs-25-XS fw-800  ta-c">
+    <!-- <div class="w-100 mt-4-S mt-10-XS fs-8-S fs-25-XS fw-800  ta-c">
       <i
         >Deposit your fund to HGEN, and then HGEN will use that fund to lend to
         hydrogen projects. You do not just have a token. You become a real
         investor with HGEN.</i
       >
+    </div> -->
+    <div class="w-100 ml-20-S pl-30-S mt-17-S pt-17-S">
+      <div class="fw-500 fs-9-M fs-10-S">P2P DEFI PLATFORM</div>
+      <div class="fw-800 cus-f fs-30-M fs-30-S">HGEN</div>
+    </div>
+    <div class="pt-20-XS mt-0-S pt-0-S pl-10-M pt-12-S pl-20-S">
+      <div class="fw-600 fs-14-S pb-5-S">
+        Realisation of customer value <br />
+        through connection with hydrogen
+      </div>
+      <div class="w-60-S w-100-XS mb-5-S mb-10-XS">
+        HGEN which is based on stability + profitability, is a hydrogen industry
+        that will grow over the next 30 years and sound personal investment. By
+        connecting them, we contribute to the vitalisation of the hydrogen
+        industry. Investors expect higher returns as hydrogen industry becomes
+        more active. In addition to this, there will be justification for
+        participating in ESG. HGEN will create a virtuous ESG cycle structured
+        with customers.
+      </div>
     </div>
     <div
-      class="w-100 pt-30-XS fd-r jc-c px-0-M pt-5-S pb-0-S px-20-XS"
+      class="w-100 pt-30-XS fd-r jc-c px-0-M pt-5-S pb-0-S px-20-XS mt-20-S"
       data-aos="fade"
       data-aos-ease="ease"
     >
-      <div class="w-100-S w-100-XS rad-fix-10 fd-r-S fd-c-XS ai-s my-col-3">
-        <div
-          class="w-100 fd-c p-10-S p-20-XS jc-l"
-          data-aos="fade"
-          data-aos-ease="ease"
-          data-aos-delay="200"
-        >
-          <div class="w-100 mb-5-S mb-10-XS">
-            We have a strong integrated solution to bring our world to DeFi
-            online platform, greatly reduces risks and environmental pollution,
-            and results in more reliable power through the utilization of
-            existing hydrogen engineering art.
-          </div>
-          <div class="w-100-S w-100-XS">
-            <AmButton color="mcolor-100" bColor="mcolor-100" opacityEffect>
-              Beginner’s Guide to DeFi
-            </AmButton>
+      <div
+        class="w-100-M w-100-S w-100-XS p-8-M p-10-S p-20-XS"
+        data-aos="fade"
+        data-aos-ease="ease"
+        data-aos-delay="200"
+        v-for="(item, i) in hydrogenItems"
+        :key="i"
+      >
+        <div class="w-100 fs-12-M fs-10-S fs-25-XS fw-600" v-html="item.name" />
+        <p v-html="item.text" class="pt-3-S pt-10-XS fs-5-M fs-8-S fs-18-XS" />
+        <div class="w-100 pt-4-S pt-10-XS">
+          <div
+            class="w-100 fd-r ai-t py-2-M py-3-S py-5-XS fs-5-M fs-8-S fs-18-XS"
+            v-for="(item2, i2) in item.items"
+            :key="i2"
+          >
+            <img
+              :src="require('@/assets/svg/' + item2.img)"
+              class="h-fix-s-9-M h-fix-s-7-S h-fix-s-20-XS mr-2-S mr-5-XS"
+            />
+            <span v-html="item2.name" />
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="w-100 fd-c jc-c mt-30-S jc-c">
+      <div class="mt-30-M mt-10-S"></div>
+      <div class="mt-30-M mt-10-S"></div>
+      <div class="mt-30-M mt-10-S"></div>
+      <div class="mt-30-M mt-10-S"></div>
+      <div class="mt-10-M mt-5-S"></div>
+      <img
+        src="@/assets/svg/SOL_logo.svg"
+        class="h-fix-100-S h-fix-20-S h-fix-35-XS"
+      />
+      <div class="fs-10-S ta-c f-white-200">
+        <span class="fw-600">HGEN</span> operates on
+        <span class="fw-600">SOLANA</span>
+      </div>
+    </div>
+    <div class="w-100 fd-c jc-c ai-c">
+      <div class="mt-30-M mt-10-S"></div>
+      <div class="mt-30-M mt-10-S"></div>
+      <div class="mt-10-M mt-5-S"></div>
+      <div class="ta-c fs-10-M fw-400 f-white-200 mb-10-M">
+        Connecting ESG and Investment Value
+      </div>
+      <div class="line h-fix-30-M py-10-M"></div>
+      <img
+        src="@/assets/svg/HGEN_logo_1.svg"
+        class="h-fix-100-S h-fix-20-S h-fix-35-XS"
+      />
+      <div class="line h-fix-30-M py-10-M my-5-M"></div>
+      <div class="mt-5-M mt-5-S"></div>
+      <div class="w-100 f-gray-400 ta-c fs-6-S fs-15-XS fw-500">
+        Total Deposited Value
+      </div>
+      <div
+        class="w-100 f-white-200 tt-u fs-20-S fs-25-XS fw-900 ta-c pt-4-S pt-15-X glow"
+      >
+        $ {{ getTotal }}
+      </div>
+    </div>
+    <div class="w-100 fd-c ai-c">
+      <div
+        class="w-50 fd-c-S fd-c-XS ai-c jc-l-S jc-c-XS gradient-1000 rad-fix-8 px-14-S px-20-XS py-10-S py-20-XS my-10-S"
+      >
         <div
-          class="w-100-M w-100-S w-100-XS p-8-M p-10-S p-20-XS"
-          data-aos="fade"
+          class="w-100 tt-u fs-11-S fs-25-XS f-white-200 fw-600 ta-c pt-0-M pt-2-S pt-2-XS"
+        >
+          Q2 of 2022
+        </div>
+        <div
+          class="w-100 fs-6-S fs-20-XS f-gray-500 fw-400 f-lh-18-S f-lh-45-XS pt-4-S pt-15-XS ta-c pb-15-XS"
+        >
+          We are ready on solana Devnet.
+          <br />
+          Be one of the first to experience it by participating in Devnet and
+          receive rewards.
+
+          <!-- We have a strong integrated solution to bring our world to DeFi online
+            platform, greatly reduces risks and environmental pollution, and
+            results in more reliable power through the utilization of existing
+            engineering art. -->
+        </div>
+      </div>
+    </div>
+    <div class="w-100 fd-c ai-c mt-10-M">
+      <div
+        class="w-100 f-white-200 tt-u fs-17-S fs-30-XS fw-800 ta-c glow"
+        data-aos="zoom-in"
+      >
+        <i>Growth With Purpose</i>
+      </div>
+      <div class="w-100 fd-r jc-c pt-5-M pt-30-XS px-0-S px-20-XS">
+        <AmButton color="gradient-5002" bColor="gradient-5002" opacityEffect>
+          <div class="w-100 tt-n fs-6-S fs-18-XS fw-600">Beginner’s Guide</div>
+        </AmButton>
+      </div>
+      <div class="w-75 f-white-200 py-5-M fs-6-M">
+        We have strong integrated solution to bring our world to DeFi online
+        platform, greatly reduce risks and environmental pollution, and result
+        in more reliable power through the utilisation of the existing hydrogen
+        engineering art.
+      </div>
+      <div
+        class="w-100 f-white-200 pt-30-XS fd-r jc-c px-0-M pt-5-S pb-0-S px-10-XS mt-10-S my-col-3"
+        data-aos-ease="ease"
+      >
+        <div
+          class="w-100-M  w-100-S w-100-XS p-5-M p-10-S p-20-XS gradient-1000 rad-fix-10 shadow-cyan-200"
           data-aos-ease="ease"
           data-aos-delay="200"
-          v-for="(item, i) in hydrogenItems"
+          v-for="(item, i) in ProjectItems"
           :key="i"
         >
-          <!-- <div
-          class="w-33-M w-100-S w-100-XS p-8-M p-10-S p-20-XS"
-          v-for="(item, i) in hydrogenItems"
-          :key="i"
-          :class="{ 'mcolor rad-fix-10 shadow-purple-100': i === 0 }"
-        > -->
-          <!-- <img
-            :src="require('@/static/' + item.img)"
-            class="w-fix-40-M w-fix-45-S w-fix-100-XS p-a r-0 b-90-S b-90-XS"
-          /> -->
           <div
-            class="w-100 fs-8-M fs-10-S fs-25-XS  fw-600"
+            class="w-100 f-cyan-600 fs-12-M fs-10-S fs-25-XS fw-600"
             v-html="item.name"
           />
           <p
@@ -118,6 +211,26 @@ export default {
         },
       ],
       hydrogenItems: [
+        {
+          name: "Impact Investment",
+          text: 'With the intention of generating financial returns beyond investing in companies, organisation and funds "Investing in consideration of social and environment nurition"',
+          img: "roadMap1.png",
+          items: [],
+        },
+        {
+          name: "Hydrogen Industry",
+          text: "The market of opportunity to grow over next 80 years. As of the end of 2021, the hydrogen infrastructure will be worth USD 142 billion. By 2025, it is expected to grow at a rapid CAGR of 9.2% to USD 2010 billion. It is a market of growing opportunity",
+          img: "roadMap2.png",
+          items: [],
+        },
+        {
+          name: "Defi Platform",
+          text: "HGEN is a blockchain based DEfi platform that supports not only financial returns but also social and environmental improvement through quick and easy impact investment in the hydrogen energy industry.",
+          img: "roadMap3.png",
+          items: [],
+        },
+      ],
+      ProjectItems: [
         {
           name: "Borrow & Staking",
           text: "The borrowing & Staking will be a critical component to the $HGEN DeFi Project Financing Platform",
@@ -212,6 +325,16 @@ export default {
       ],
     };
   },
+  computed: {
+    getTotal() {
+      let res = "000000000000";
+      const total = this.$accessor.totalDeposit;
+      if (total) {
+        res = res.substr(0, res.length - total.toString().length) + total;
+      }
+      return res.toString().replace(/(.)(?=(\d{3})+$)/g, "$1,");
+    },
+  },
 };
 </script>
 
@@ -219,5 +342,15 @@ export default {
 .my-col-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+}
+
+.cus-f {
+  font-family: "koHo";
+}
+
+.line {
+  background-color: white;
+  width: 1px;
 }
 </style>

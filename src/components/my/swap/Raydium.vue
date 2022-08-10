@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-100 br-6 gradient-2000 rad-fix-8 p-8-S p-20-XS shadow-purple-100"
+    class="w-100 br-6 gradient-2000 rad-fix-8 p-8-S p-20-XS shadow-cyan-200"
   >
     <div class="w-100" :class="{ 'op-0': getLoading }">
       <div class="w-100 fw-600 f-white-200 fd-r jc-sb">
@@ -26,7 +26,7 @@
           <Tooltip placement="bottomRight">
             <!-- <template slot="title">
             <div
-              class="shadow-purple-100 p-2-S p-10-XS f-white-200 fs-5-S fs-20-XS mcolor-500 rad-fix-3 z-15"
+              class="shadow-cyan-200 p-2-S p-10-XS f-white-200 fs-5-S fs-20-XS mcolor-500 rad-fix-3 z-15"
             >
               <p>Program Addresses (DO NOT DEPOSIT)</p>
               <div class="swap-info">

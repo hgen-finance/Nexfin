@@ -6,7 +6,7 @@
     <Footer />
     <!-- <AmModal
       :show="modal === 'connect'"
-      :shadow="errorConnect ? 'shadow-red-100' : 'shadow-purple-300'"
+      :shadow="errorConnect ? 'shadow-red-100' : 'shadow-cyan-300'"
       max="w-fix-250-S w-90-XS"
       @closed="setModalFunc"
     >

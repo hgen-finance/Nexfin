@@ -65,7 +65,7 @@
       Total Deposited Value (Total Value Locked)
     </div> -->
     <!-- <div class="w-100 fd-r-S fd-c-XS ai-s">
-       <div class="w-50-S w-100-XS br-6 brs-s br-mcolor-300 shadow-purple-100 p-6-S p-20-XS rad-fix-8-S rad-fix-20-XS mr-2-S">
+       <div class="w-50-S w-100-XS br-6 brs-s br-mcolor-300 shadow-cyan-200 p-6-S p-20-XS rad-fix-8-S rad-fix-20-XS mr-2-S">
         <Current />
       </div> 
         <div

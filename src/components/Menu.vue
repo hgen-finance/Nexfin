@@ -60,7 +60,7 @@
             Launch App
           </AmButton>
           <div
-            class="w-a-S w-100-XS d-ib rad-fix-2 br-4 brs-s mcolor-100 shadow-purple-100 br-purple-700 f-white-200 px-0-S px-10-XS"
+            class="w-a-S w-100-XS d-ib rad-fix-2 br-4 brs-s mcolor-100 shadow-cyan-200 br-purple-700 f-white-200 px-0-S px-10-XS"
             v-if="publicKey"
           >
             <span

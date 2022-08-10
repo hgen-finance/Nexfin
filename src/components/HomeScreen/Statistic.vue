@@ -11,8 +11,8 @@
             :percent="20"
             :radius="radius[0]"
             :stroke="stroke"
-            colorFrom="8F00FF"
-            colorTo="8F00FF"
+            colorFrom="00b8d4"
+            colorTo="00b8d4"
             text="Development"
             tokens="50.000.000"
             tokenpercent="5"
@@ -24,8 +24,8 @@
               :percent="20"
               :radius="radius[1]"
               :stroke="stroke"
-              colorFrom="8F00FF"
-              colorTo="8F00FF"
+              colorFrom="00b8d4"
+              colorTo="00b8d4"
               text="Reserve"
               tokens="300.000.000"
               tokenpercent="5"
@@ -38,8 +38,8 @@
               :percent="40"
               :radius="radius[2]"
               :stroke="stroke"
-              colorFrom="A533FF"
-              colorTo="A533FF"
+              colorFrom="18ffff"
+              colorTo="18ffff"
               text="Team"
               tokens="100.000.000"
               tokenpercent="10"
@@ -52,8 +52,8 @@
               :percent="40"
               :radius="radius[3]"
               :stroke="stroke"
-              colorFrom="A533FF"
-              colorTo="A533FF"
+              colorFrom="18ffff"
+              colorTo="18ffff"
               text="Partner & Adv"
               tokens="100.000.000"
               tokenpercent="10"
@@ -66,8 +66,8 @@
               :percent="50"
               :radius="radius[4]"
               :stroke="stroke"
-              colorFrom="BC66FF"
-              colorTo="BC66FF"
+              colorFrom="80deea"
+              colorTo="80deea"
               text="Collateral"
               tokens="150.000.000"
               tokenpercent="15"
@@ -80,8 +80,8 @@
               :percent="60"
               :radius="radius[5]"
               :stroke="stroke"
-              colorFrom="D299FF"
-              colorTo="D299FF"
+              colorFrom="b2ebf2"
+              colorTo="b2ebf2"
               text="Eco"
               tokens="250.000.000"
               tokenpercent="25"
@@ -94,8 +94,8 @@
               :percent="70"
               :radius="radius[6]"
               :stroke="stroke"
-              colorFrom="E9CCFF"
-              colorTo="E9CCFF"
+              colorFrom="e0f7fa"
+              colorTo="e0f7fa"
               text="Sale"
               tokens="300.000.000"
               tokenpercent="30"
@@ -110,13 +110,7 @@
           </div>
         </div>
       </div>
-      <div class="w-100 fd-r jc-c pt-10-S pt-30-XS px-0-S px-20-XS">
-        <AmButton color="mcolor-100" bColor="mcolor-100" opacityEffect>
-          <div class="w-100 tt-n fs-6-S fs-18-XS fw-600">
-            Beginner’s Guide to Token
-          </div>
-        </AmButton>
-      </div>
+      
     </div>
     <div class="w-40-S w-100-XS fd-c-S fd-c-XS ai-c">
       <span
@@ -132,19 +126,19 @@
           data-aos-ease="ease"
         >
           <div class="fd-c ai-c f-white-200 mb-5-S mb-10-XS">
-            <span class="fs-10-S fs-30-XS fw-600 f-purple-500">
+            <span class="fs-10-S fs-30-XS fw-600 f-cyan-500">
               <i>{{ buyTax.value }} %</i>
             </span>
             <span class="fs-10-S fs-30-XS fw-600"><i>Buy Tax</i></span>
           </div>
           <div
-            class="w-100 shadow-purple-200 rad-fix-6 p-3-S p-10-XS br-6 brs-s br-mcolor-100"
+            class="w-100 shadow-cyan-200 rad-fix-6 p-3-S p-10-XS br-6 brs-s br-mcolor-100"
             v-for="(item, i) in items"
             :key="i"
             :class="{ 'mt-3-S mt-10-XS': i > 0 }"
           >
             <div
-              class="w-100 ta-c f-mcolor-400 fw-600 fs-6-M fs-10-S fs-25-XS pt-5-S pb-5-S pt-10-XS pb-10-XS"
+              class="w-100 ta-c f-white-200 fw-600 fs-6-M fs-10-S fs-25-XS pt-5-S pb-5-S pt-10-XS pb-10-XS"
             >
               {{ item.name }} {{ item.count }}%
             </div>
@@ -156,19 +150,19 @@
           data-aos-ease="ease"
         >
           <div class="fd-c ai-c f-white-200 mb-5-S mb-10-XS">
-            <span class="fs-10-S fs-30-XS fw-600 f-purple-500">
+            <span class="fs-10-S fs-30-XS fw-600 f-cyan-500">
               <i>{{ sellTax.value }} %</i>
             </span>
             <span class="fs-10-S fs-30-XS fw-600"><i>Sell Tax</i></span>
           </div>
           <div
-            class="w-100 shadow-purple-200 rad-fix-6 p-3-S p-10-XS br-6 brs-s br-mcolor-100"
+            class="w-100 shadow-cyan-200 rad-fix-6 p-3-S p-10-XS br-6 brs-s br-mcolor-100"
             v-for="(item, i) in items2"
             :key="i"
             :class="{ 'mt-3-S mt-10-XS': i > 0 }"
           >
             <div
-              class="w-100 ta-c f-mcolor-400 fw-600 fs-6-M fs-10-S fs-25-XS pt-5-S pb-5-S pt-10-XS pb-10-XS"
+              class="w-100 ta-c f-white-200 fw-600 fs-6-M fs-10-S fs-25-XS pt-5-S pb-5-S pt-10-XS pb-10-XS"
             >
               {{ item.name }} {{ item.count }}%
             </div>
