@@ -27,7 +27,7 @@
         <div
           class="w-100 tt-u fs-11-S fs-25-XS f-white-200 fw-600 ta-l-S ta-c-XS pt-0-M pt-2-S pt-2-XS"
         >
-          Q1 of 2023
+          Q3 of 2022 on mainnet
         </div>
         <div
           class="w-100 fs-6-S fs-20-XS f-gray-500 fw-400 f-lh-18-S f-lh-45-XS pt-4-S pt-15-XS ta-l-S ta-c-XS pb-15-XS"
@@ -36,6 +36,22 @@
           <br />
           Be one of the first to experience it by participating in Devnet and
           receive rewards.
+          <br/>
+          <ul>
+            <li><a
+            href="https://nexfin-4wk8byqlc-pree-side.vercel.app"
+            class="fw-400 fs-6-L fs-6-M fs-6-S fs-6-XS f-mcolor-300 wb-br-all mt-3"
+          >
+            New home page desgin
+          </a></li>
+          <li><a
+            href="https://nexfin-web-ui.vercel.app"
+            class="fw-400 fs-6-L fs-6-M fs-6-S fs-6-XS f-mcolor-300 wb-br-all mt-3"
+          >
+            New App desgin
+          </a></li>
+          </ul>
+         
 
           <!-- We have a strong integrated solution to bring our world to DeFi online
           platform, greatly reduces risks and environmental pollution, and
@@ -69,5 +85,22 @@
   top: 0;
   left: 0;
   z-index: 0; // 1 layer above the background
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding-left: 30px;
+}
+
+ul li:before {
+  font-weight: 600;
+  font-size: 20px;
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: purple;
 }
 </style>
