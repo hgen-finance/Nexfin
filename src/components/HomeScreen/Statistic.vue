@@ -188,15 +188,15 @@ export default {
   },
   data() {
     return {
-      sellTax: { value: 5 },
-      buyTax: { value: 5 },
+      sellTax: { value: 0 },
+      buyTax: { value: 0 },
       items: [
-        { name: "BuyBack", count: 3 },
-        { name: "Marketing", count: 2 },
+        // { name: "BuyBack", count: 3 },
+        // { name: "Marketing", count: 2 },
       ],
       items2: [
-        { name: "BuyBack", count: 3 },
-        { name: "Marketing", count: 2 },
+        // { name: "BuyBack", count: 3 },
+        // { name: "Marketing", count: 2 },
       ],
       radius: [],
       stroke: 12,
