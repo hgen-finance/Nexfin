@@ -1,8 +1,8 @@
 <template>
   <div class="container pt-20-S pt-40-XS">
-    <div class="w-100 fd-r jc-c ai-c">
+    <div class="w-100 fd-r fd-c-XS jc-c ai-c">
       <div class="w-20 fd-c ai-c">
-        <div class="w-100 fs-5-S fs-10-XS ta-c f-white-200 fw-600">
+        <div class="w-100 fs-5-S fs-20-XS fs-10-XS ta-c f-white-200 fw-600">
           Stable Coin
         </div>
         <div

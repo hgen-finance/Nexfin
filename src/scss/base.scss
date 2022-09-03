@@ -8,6 +8,8 @@
 //color
 $bg-color: #161421;
 
+
+
 html {
   font-family: "Poppins", sans-serif;
 }
@@ -562,6 +564,23 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
     width: 20px;
     height: 20px;
   }
+
+  // for the logo aligh
+  .mla-XS {
+    top: -15px;
+    left: -100px;
+  }
+
+  .my-col-1-XS {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1%;
+  }
+  .home-bg-XS {
+    background-image: url(@/assets/misc/web_bg-XS.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 @media (min-width: $small) {
   .cside-S div {
@@ -583,6 +602,22 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
 
   .cards-S {
     height: 450px;
+  }
+
+  .mla-S {
+    top:-15px;
+    left: -25px;
+  }
+  .my-col-3-S {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+  }
+
+  .home-bg {
+    background-image: url(@/assets/misc/web_bg.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media (min-width: $medium) {
@@ -606,6 +641,8 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
   .cards-M {
     height: 800px;
   }
+
+  
 }
 @media (min-width: $large) {
   .cside-L div {

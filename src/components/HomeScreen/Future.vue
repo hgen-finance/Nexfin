@@ -3,17 +3,32 @@
     <div
       class="w-100 fd-r-S fd-c-XS ai-c jc-l-S jc-c-XS rad-fix-8 px-14-S px-20-XS py-10-S py-20-XS"
     >
+    <div class="w-100 d-n-S fd-r jc-c">
+      <div class="w-100 mb-20-XS fd-r jc-c">
+        <AmButton
+            color="gradient-5002"
+            opacityEffect
+            scaleEffect
+            disableShadow
+            :full="mobile"
+            link="https://dev.hgen.finance"
+            v-if="!publicKey"
+          >
+            Launch App
+          </AmButton>
+      </div>
+    </div>
       <div class="w-50-S w-100-XS">
         <div class = "w-100 fd-r">
           <div
-          class="w-100 tt-u fs-18-S fs-25-XS fw-600 ta-l-S ta-c-XS pt-0-M pt-2-S pt-2-XS"
+          class="w-100 tt-u fs-18-S fs-40-XS fw-600 ta-l-S ta-c-XS pt-0-M pt-2-S pt-2-XS"
           >
           Connecting <br/> Value and ESG
           </div>
           <div class ="fd-r ai-c">
             <img
             src="@/assets/svg/earth.svg"
-            class="h-fix-40-S h-fix-20-S h-fix-35-XS"
+            class="h-fix-40-S h-fix-20-S h-fix-100-XS"
             />
           </div>
         </div>

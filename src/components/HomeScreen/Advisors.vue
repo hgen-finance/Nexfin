@@ -8,14 +8,14 @@
     </div>
     <div class="w-100 pt-15-S pt-20-XS fd-c jc-c fw-w px-5-S px-0-XS">
       <div
-        class="w-95-S w-100-XS fd-r ai-t p-2-S p-20-XS mb-5-S mb-10-XS"
+        class="w-95-S w-100-XS fd-r fd-c-XS ai-t p-2-S p-20-XS mb-5-S mb-10-XS ai-c-XS"
         v-for="(item, i) in items"
         :key="i"
       >
         <div v-if="item.logo">
           <img
             :src="require('@/assets/svg/' + item.logo)"
-            class="z-12 w-fix-40-M w-fix-45-S w-fix-100-XS p-a b-90-S b-90-XS my-logo-align"
+            class="z-12 w-fix-40-M w-fix-45-S w-fix-100-XS p-a b-90-S b-90-XS mla-S mla-XS"
           />
         </div>
         <div
@@ -28,19 +28,19 @@
             />
           </div>
         </div>
-        <div class="w-80-S w-100-XS mx-5-S">
+        <div class="w-80-S w-100-XS mx-5-S ">
           <div
-            class="w-100 fs-8-M fs-10-S fs-25-XS fw-600 ta-l pt-0-S pt-10-XS f-white-200"
+            class="w-100 fs-8-M fs-10-S fs-25-XS fw-600 ta-l pt-0-S pt-10-XS f-white-200 ta-c-XS"
           >
             {{ item.name }}
           </div>
           <div
-            class="w-100 fs-6-M fs-8-S fs-20-XS fw-600 ta-l pb-2-S pb-5-XS pt-0-S pt-10-XS f-cyan-400 tt-u"
+            class="w-100 fs-6-M fs-8-S fs-20-XS fw-600 ta-l pb-2-S pb-5-XS pt-0-S pt-10-XS f-cyan-400 tt-u ta-c-XS"
           >
             {{ item.position }}
           </div>
           <div
-            class="w-100 fs-5-M fs-8-S fs-20-XS ta-l pt-0-S pt-10-XS f-white-200 px-10-XS f-lh-15-S f-lh-45-XS"
+            class="w-100 fs-5-M fs-8-S fs-20-XS ta-l pt-0-S pt-10-XS f-white-200 px-10-XS f-lh-15-S f-lh-45-XS "
           >
             <ul v-for="(list, m) in item.text" :key="m">
               <li>{{ list }}</li>

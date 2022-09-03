@@ -1,5 +1,5 @@
 <template>
-  <div class="w-100 home-bg h-100min">
+  <div class="w-100 home-bg home-bg-XS h-100min">
     <!-- <div class="w-100 h-100min p-f l-0 t-0 ovh-y-a bg-l" /> -->
     <Menu @connect="setModalFunc" :publicKey="publicKey" @logout="logout" />
     <Nuxt />
@@ -86,9 +86,5 @@ export default {
 </script>
 
 <style>
-  .home-bg {
-    background-image: url(@/assets/misc/web_bg.png) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  
 </style>

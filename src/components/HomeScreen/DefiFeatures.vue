@@ -1,36 +1,15 @@
 <template>
-  <div class="container pt-20-M pt-20-S mb-0-S mb-10-XS jc-c fd-c">
-    <!-- <div
-      class="
-        w-100
-        pt-6-M pt-4-S pt-15-XS
-        fs-8-S fs-20-XS
-        fw-600
-        
-        ta-c
-      "
-      data-aos="zoom-in"
-      data-aos-duration="500"
-    >
-      $HGEN DeFi Platform
-    </div> -->
-    <!-- <div class="w-100 mt-4-S mt-10-XS fs-8-S fs-25-XS fw-800  ta-c">
-      <i
-        >Deposit your fund to HGEN, and then HGEN will use that fund to lend to
-        hydrogen projects. You do not just have a token. You become a real
-        investor with HGEN.</i
-      >
-    </div> -->
-    <div class="w-100 ml-20-S pl-30-S mt-17-S pt-17-S">
-      <div class="fw-500 fs-9-M fs-10-S">P2P DEFI PLATFORM</div>
-      <div class="fw-800 cus-f fs-30-M fs-30-S">HGEN</div>
+  <div class="container pt-20-M pt-20-S mb-0-S mb-10-XS jc-c ai-c-XS fd-c">
+    <div class="w-100 ml-20-S pl-30-L pl-10-M pl-30-S mt-17-L mt-2-M mt-9-S pt-17-S ai-c-XS">
+      <div class="fw-500 fs-9-M fs-10-S ta-c-XS">P2P DEFI PLATFORM</div>
+      <div class="fw-800 cus-f fs-30-M fs-30-S ta-c-XS">HGEN</div>
     </div>
-    <div class="pt-20-XS mt-0-S pt-0-S pl-10-M pt-12-S pl-20-S">
-      <div class="fw-600 fs-14-S pb-5-S">
+    <div class="pt-20-XS mt-0-S pt-0-S pl-0-M pl-20-S pt-12-S pl-12-L">
+      <div class="fw-600 fs-14-M fs-10-S fs-20-XS pb-5-S pb-10-XS">
         Realisation of customer value <br />
         through connection with hydrogen
       </div>
-      <div class="w-60-S w-100-XS mb-5-S mb-10-XS">
+      <div class="w-60-S w-100-XS mb-5-S mb-10-XS fs-6-M fs-8-S fs-20-XS">
         HGEN which is based on stability + profitability, is a hydrogen industry
         that will grow over the next 30 years and sound personal investment. By
         connecting them, we contribute to the vitalisation of the hydrogen
@@ -41,15 +20,10 @@
       </div>
     </div>
     <div
-      class="w-100 pt-30-XS fd-r jc-c px-0-M pt-5-S pb-0-S px-20-XS mt-20-S"
-      data-aos="fade"
-      data-aos-ease="ease"
+      class="w-100 pt-30-XS fd-r fd-c-XS jc-c px-0-M pt-5-S pb-0-S px-20-XS mt-20-S"
     >
       <div
         class="w-100-M w-100-S w-100-XS p-8-M p-10-S p-20-XS"
-        data-aos="fade"
-        data-aos-ease="ease"
-        data-aos-delay="200"
         v-for="(item, i) in hydrogenItems"
         :key="i"
       >
@@ -79,7 +53,7 @@
       <div class="mt-10-M mt-5-S"></div>
       <img
         src="@/assets/svg/SOL_logo.svg"
-        class="h-fix-100-S h-fix-20-S h-fix-35-XS"
+        class="h-fix-100-S h-fix-20-S h-fix-35-XS d-n-XS"
       />
       <div class="fs-10-S ta-c f-white-200">
         <span class="fw-600">HGEN</span> operates on
@@ -96,22 +70,22 @@
       <div class="line h-fix-30-M py-10-M"></div>
       <img
         src="@/assets/svg/HGEN_logo_1.svg"
-        class="h-fix-100-S h-fix-20-S h-fix-35-XS"
+        class="h-fix-100-S h-fix-20-S h-fix-150-XS"
       />
       <div class="line h-fix-30-M py-10-M my-5-M"></div>
       <div class="mt-5-M mt-5-S"></div>
-      <div class="w-100 f-gray-400 ta-c fs-6-S fs-15-XS fw-500">
+      <div class="w-100 f-gray-400 ta-c fs-6-S fs-25-XS py-20-XS fw-500">
         Total Deposited Value
       </div>
       <div
-        class="w-100 f-white-200 tt-u fs-20-S fs-25-XS fw-900 ta-c pt-4-S pt-15-X glow"
+        class="w-100 f-white-200 tt-u fs-20-S fs-30-XS fw-900 ta-c pt-4-S pt-15-X glow mb-20-XS"
       >
         $ {{ getTotal }}
       </div>
     </div>
     <div class="w-100 fd-c ai-c">
       <div
-        class="w-50 fd-c-S fd-c-XS ai-c jc-l-S jc-c-XS gradient-1000 rad-fix-8 px-14-S px-20-XS py-10-S py-20-XS my-10-S"
+        class="w-50-S w-100-XS fd-c-S fd-c-XS ai-c jc-l-S jc-c-XS gradient-1000 rad-fix-8 px-14-S px-20-XS py-10-S py-20-XS my-10-S"
       >
         <div
           class="w-100 tt-u fs-11-S fs-25-XS f-white-200 fw-600 ta-c pt-0-M pt-2-S pt-2-XS"
@@ -133,26 +107,26 @@
         </div>
       </div>
     </div>
-    <div class="w-100 fd-c ai-c mt-10-M">
+    <div class="w-100 fd-c ai-c mt-10-M mt-40-XS">
       <div
         class="w-100 f-white-200 tt-u fs-17-S fs-30-XS fw-800 ta-c glow"
         data-aos="zoom-in"
       >
         <i>Growth With Purpose</i>
       </div>
-      <div class="w-100 fd-r jc-c pt-5-M pt-30-XS px-0-S px-20-XS">
+      <div class="w-100 fd-r jc-c pt-5-M pt-20-XS px-0-S px-20-XS">
         <AmButton color="gradient-5002" bColor="gradient-5002" opacityEffect>
           <div class="w-100 tt-n fs-6-S fs-18-XS fw-600">Beginner’s Guide</div>
         </AmButton>
       </div>
-      <div class="w-75 f-white-200 py-5-M fs-6-M">
+      <div class="w-75 f-white-200 py-5-M fs-6-M fs-20-XS mt-10-XS">
         We have strong integrated solution to bring our world to DeFi online
         platform, greatly reduce risks and environmental pollution, and result
         in more reliable power through the utilisation of the existing hydrogen
         engineering art.
       </div>
       <div
-        class="w-100 f-white-200 pt-30-XS fd-r jc-c px-0-M pt-5-S pb-0-S px-10-XS mt-10-S my-col-3"
+        class="w-100 f-white-200 pt-30-XS jc-c px-0-M pt-5-S pb-0-S px-10-XS mt-10-S my-col-3-S my-col-1-XS"
         data-aos-ease="ease"
       >
         <div
@@ -339,11 +313,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-col-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5%;
-}
+
 
 .cus-f {
   font-family: "koHo";
