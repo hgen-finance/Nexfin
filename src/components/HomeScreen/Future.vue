@@ -39,7 +39,7 @@
           <br/>
           <ul>
             <li><a
-            href="https://nexfin-4wk8byqlc-pree-side.vercel.app"
+            href="https://nexfin-12h7hxhg8-pree-side.vercel.app/"
             class="fw-400 fs-6-L fs-6-M fs-6-S fs-6-XS f-mcolor-300 wb-br-all mt-3"
           >
             New home page desgin
