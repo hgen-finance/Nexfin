@@ -90,7 +90,7 @@
         <div
           class="w-100 tt-u fs-11-S fs-25-XS f-white-200 fw-600 ta-c pt-0-M pt-2-S pt-2-XS"
         >
-          Q2 of 2022
+          Q3 of 2023 on mainnet
         </div>
         <div
           class="w-100 fs-6-S fs-20-XS f-gray-500 fw-400 f-lh-18-S f-lh-45-XS pt-4-S pt-15-XS ta-c pb-15-XS"
