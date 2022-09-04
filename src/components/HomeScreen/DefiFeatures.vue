@@ -115,7 +115,7 @@
         <i>Growth With Purpose</i>
       </div>
       <div class="w-100 fd-r jc-c pt-5-M pt-20-XS px-0-S px-20-XS">
-        <AmButton color="gradient-5002" bColor="gradient-5002" opacityEffect>
+        <AmButton color="gradient-5002" bColor="gradient-5002" opacityEffect link="https://docs.hgen.finance/beginners-guide">
           <div class="w-100 tt-n fs-6-S fs-18-XS fw-600">Beginner’s Guide</div>
         </AmButton>
       </div>

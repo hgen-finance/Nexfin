@@ -68,18 +68,6 @@ export default {
             "Intensive technology evaluation on hydrogen value-chain companies including production, transfer storage for ground, aerial, sea and space application",
           ],
         },
-         {
-          img: "advisor2.png",
-          logo: "nasa-logo.png",
-          name: "Dr. William Notardonato",
-          position: "Technical Advisor",
-          text: [
-            "The Founder and CEO of Eta Space LLC in Florida, The USA",
-            "Chief Engineer and Cryogenic Fuel System Manager at NASA Kennedy Space Center",
-            "An IAS (Institute of Advanced Studies) Western Australia University Fellow Professor",
-            "A World Class  Engineer in Liquid Hydrogen and Oxygen Management",
-          ],
-        },
         {
           img: "david.jpeg",
           name: "David Eunsung So",
@@ -100,17 +88,6 @@ export default {
             "Das-Kapital(HG Ventures), Partner",
             "Fortune Korea, Europe Correspondent",
             "Atomrigs Lab, Marketer & BD",
-          ],
-        },
-        {
-          img: "paul.png",
-          name: "Paul Sandhu",
-          position: "Director of Finance & Compliance",
-          text: [
-            "Chief Director of Prometheus LLC. in Hong Kong",
-            "University of British Columbia Theoretical Physics Majored ",
-            "Multi-Asset Quant Solutions & Client Advisory Head  MAQS",
-            "Asia Pacific for BNP Paribas Asset Management  Board Member",
           ],
         },
         {

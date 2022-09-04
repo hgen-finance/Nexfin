@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container fd-c ai-c">
     <div class="w-100 fd-r fd-c-XS jc-c ai-c">
       <div class="w-20 fd-c jc-c">
-        <div class="w-100 fs-5-S fs-10-XS ta-c f-white-200 fw-600">
+        <div class="w-100 fs-5-S fs-15-XS ta-c f-white-200 fw-600">
           Governance & IDO Token
         </div>
         <div
@@ -27,6 +27,7 @@
         </AmButton>
       </div>
     </div>
+    <div class="fs-5-S fs-15-XS f-white-200 mt-5-S mt-10-XS"><i>Hgen will be launched at later stage</i></div>
     <!-- <div
       class="w-100 fd-r jc-c ai-c fs-14-S fs-30-XS f-white-200 fw-600"
       data-aos="zoom-in"
