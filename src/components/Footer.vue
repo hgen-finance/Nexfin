@@ -52,6 +52,12 @@
               class="h-fix-15-S h-fix-55-XS"
             />
           </a>
+          <a href="https://www.linkedin.com/in/hgen-finance-6bbb49236/" class="mx-4-S mx-10-XS hv ts-3 op-7">
+            <img
+              src="@/assets/svg/linkedin.svg"
+              class="h-fix-15-S h-fix-55-XS"
+            />
+          </a>
         </div>
       </div>
     </div>
