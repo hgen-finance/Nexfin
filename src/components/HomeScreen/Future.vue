@@ -70,4 +70,21 @@
   left: 0;
   z-index: 0; // 1 layer above the background
 }
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding-left: 30px;
+}
+
+ul li:before {
+  font-weight: 600;
+  font-size: 20px;
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: purple;
+}
 </style>
