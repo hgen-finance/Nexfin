@@ -1,8 +1,8 @@
 <template>
   <div class="container pt-20-S pt-40-XS">
-    <div class="w-100 fd-r jc-c ai-c">
+    <div class="w-100 fd-r fd-c-XS jc-c ai-c">
       <div class="w-20 fd-c ai-c">
-        <div class="w-100 fs-5-S fs-10-XS ta-c f-white-200 fw-600">
+        <div class="w-100 fs-5-S fs-20-XS fs-10-XS ta-c f-white-200 fw-600">
           Stable Coin
         </div>
         <div
@@ -17,14 +17,14 @@
       </div>
       <div class="w-20-S w-100-XS">
         <AmButton
-          color="mcolor-100"
-          bColor="mcolor-100"
+          color="gradient-5002"
+          bColor="gradient-5002"
           opacityEffect
           scaleEffect
           class="ml-2 ml-0-XS mt-0-S mt-10-XS fw-600"
           link="https://dev.hgen.finance/borrowing"
         >
-          <div class="w-100 tt-n fs-6-S fs-18-XS fw-600">Buy $GENS</div>
+          <div class="w-100 tt-n fs-6-S fs-18-XS fw-600">Buy GENS</div>
         </AmButton>
       </div>
     </div>

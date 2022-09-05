@@ -18,7 +18,7 @@
             /> -->
           </div>
           <div
-            class="w-100 fs-5-S fs-18-XS fw-600 f-gray-700 pt-3-S pt-10-XS ta-l-S ta-c-XS"
+            class="w-100 fs-5-S fs-18-XS fw-600 f-white-200 pt-3-S pt-10-XS ta-l-S ta-c-XS"
           >
             Copyright © {{ new Date().getFullYear() }} HGEN Finance All rights
             reserved.
@@ -49,6 +49,12 @@
           >
             <img
               src="@/assets/svg/discord.svg"
+              class="h-fix-15-S h-fix-55-XS"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/hgen-finance-6bbb49236/" class="mx-4-S mx-10-XS hv ts-3 op-7">
+            <img
+              src="@/assets/svg/linkedin.svg"
               class="h-fix-15-S h-fix-55-XS"
             />
           </a>

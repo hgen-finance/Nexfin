@@ -5,7 +5,7 @@
       >?</label
     >
     <span
-      class="popup w-fix-100min w-100max-S w-a-XS shadow-purple-100 p-2-S p-10-XS p-a l-0 t-100 fs-5-S fs-20-XS mcolor-500 rad-fix-3 fw-400 f-lh-13-S f-lh-43-XS z-15"
+      class="popup w-fix-100min w-100max-S w-a-XS shadow-cyan-200 p-2-S p-10-XS p-a l-0 t-100 fs-5-S fs-20-XS mcolor-500 rad-fix-3 fw-400 f-lh-13-S f-lh-43-XS z-15"
     >
       <slot />
     </span>

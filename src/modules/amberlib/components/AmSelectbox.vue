@@ -26,7 +26,7 @@
           getFocusClass,
           { focus: focusValue },
           modelData.colorBackground,
-          { 'shadow-purple-100': shadow, 'px-4-S px-15-XS': padding },
+          { 'shadow-cyan-200': shadow, 'px-4-S px-15-XS': padding },
         ]"
         @focus="focusValue = true"
         @blur="

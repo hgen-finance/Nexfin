@@ -1,12 +1,12 @@
 <template>
-  <div class="w-100 h-100min">
-    <div class="w-100 h-100min p-f l-0 t-0 ovh-y-a bg-l" />
+  <div class="w-100 home-bg home-bg-XS h-100min">
+    <!-- <div class="w-100 h-100min p-f l-0 t-0 ovh-y-a bg-l" /> -->
     <Menu @connect="setModalFunc" :publicKey="publicKey" @logout="logout" />
     <Nuxt />
     <Footer />
     <!-- <AmModal
       :show="modal === 'connect'"
-      :shadow="errorConnect ? 'shadow-red-100' : 'shadow-purple-300'"
+      :shadow="errorConnect ? 'shadow-red-100' : 'shadow-cyan-300'"
       max="w-fix-250-S w-90-XS"
       @closed="setModalFunc"
     >
@@ -84,3 +84,7 @@ export default {
   },
 };
 </script>
+
+<style>
+  
+</style>

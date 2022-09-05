@@ -8,18 +8,18 @@
     </div>
     <div class="w-100 pt-15-S pt-20-XS fd-c jc-c fw-w px-5-S px-0-XS">
       <div
-        class="w-95-S w-100-XS fd-r ai-t p-2-S p-20-XS mb-5-S mb-10-XS"
+        class="w-95-S w-100-XS fd-r fd-c-XS ai-t p-2-S p-20-XS mb-5-S mb-10-XS ai-c-XS"
         v-for="(item, i) in items"
         :key="i"
       >
         <div v-if="item.logo">
           <img
             :src="require('@/assets/svg/' + item.logo)"
-            class="z-12 w-fix-40-M w-fix-45-S w-fix-100-XS p-a b-90-S b-90-XS my-logo-align"
+            class="z-12 w-fix-40-M w-fix-45-S w-fix-100-XS p-a b-90-S b-90-XS mla-S mla-XS"
           />
         </div>
         <div
-          class="w-20-S w-60-XS h-fix-95-M h-fix-s-150-XS brs-s br-mcolor-100 shadow-purple-100 ovh rad-fix-6"
+          class="w-20-S w-60-XS h-fix-95-M h-fix-s-150-XS brs-s br-mcolor-100 shadow-cyan-200 ovh rad-fix-6"
         >
           <div v-if="item.img">
             <img
@@ -28,19 +28,19 @@
             />
           </div>
         </div>
-        <div class="w-80-S w-100-XS mx-5-S">
+        <div class="w-80-S w-100-XS mx-5-S ">
           <div
-            class="w-100 fs-8-M fs-10-S fs-25-XS fw-600 ta-l pt-0-S pt-10-XS f-white-200"
+            class="w-100 fs-8-M fs-10-S fs-25-XS fw-600 ta-l pt-0-S pt-10-XS f-white-200 ta-c-XS"
           >
             {{ item.name }}
           </div>
           <div
-            class="w-100 fs-6-M fs-8-S fs-20-XS fw-600 ta-l pb-2-S pb-5-XS pt-0-S pt-10-XS f-mcolor-100 tt-u"
+            class="w-100 fs-6-M fs-8-S fs-20-XS fw-600 ta-l pb-2-S pb-5-XS pt-0-S pt-10-XS f-cyan-400 tt-u ta-c-XS"
           >
             {{ item.position }}
           </div>
           <div
-            class="w-100 fs-5-M fs-8-S fs-20-XS ta-l pt-0-S pt-10-XS f-white-200 px-10-XS f-lh-15-S f-lh-45-XS"
+            class="w-100 fs-5-M fs-8-S fs-20-XS ta-l pt-0-S pt-10-XS f-white-200 px-10-XS f-lh-15-S f-lh-45-XS "
           >
             <ul v-for="(list, m) in item.text" :key="m">
               <li>{{ list }}</li>
@@ -68,18 +68,6 @@ export default {
             "Intensive technology evaluation on hydrogen value-chain companies including production, transfer storage for ground, aerial, sea and space application",
           ],
         },
-        //  {
-        //   img: "advisor2.png",
-        //   logo: "nasa-logo.png",
-        //   name: "Dr. William Notardonato",
-        //   position: "Technical Advisor",
-        //   text: [
-        //     "The Founder and CEO of Eta Space LLC in Florida, The USA",
-        //     "Chief Engineer and Cryogenic Fuel System Manager at NASA Kennedy Space Center",
-        //     "An IAS (Institute of Advanced Studies) Western Australia University Fellow Professor",
-        //     "A World Class  Engineer in Liquid Hydrogen and Oxygen Management",
-        //   ],
-        // },
         {
           img: "david.jpeg",
           name: "David Eunsung So",
@@ -102,17 +90,6 @@ export default {
             "Atomrigs Lab, Marketer & BD",
           ],
         },
-        // {
-        //   img: "paul.png",
-        //   name: "Paul Sandhu",
-        //   position: "Director of Finance & Compliance",
-        //   text: [
-        //     "Chief Director of Prometheus LLC. in Hong Kong",
-        //     "University of British Columbia Theoretical Physics Majored ",
-        //     "Multi-Asset Quant Solutions & Client Advisory Head  MAQS",
-        //     "Asia Pacific for BNP Paribas Asset Management  Board Member",
-        //   ],
-        // },
         {
           img: "user.png",
           name: "Preeyash Pradhan",
@@ -140,7 +117,7 @@ ul li:before {
   content: "▹";
   position: absolute;
   left: 0px;
-  color: purple;
+  color: cyan;
 }
 
 .my-logo-align {

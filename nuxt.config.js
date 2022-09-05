@@ -105,11 +105,11 @@ export default {
     },
 
     //   ENV
-    env: {
-        baseUrl: process.env.BASE_URL || "http://server:3000",
-        mint: "2aNEZTF7Lw9nfYv6qQEuWDyngSrB5hbdfx35jpqwcKz8",
-        mintAuthority: process.env.MINT_AUTHORITY,
-    },
+    // env: {
+    //     baseUrl: process.env.BASE_URL || "http://server:3000",
+    //     mint: "2aNEZTF7Lw9nfYv6qQEuWDyngSrB5hbdfx35jpqwcKz8",
+    //     mintAuthority: process.env.MINT_AUTHORITY,
+    // },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
@@ -120,12 +120,12 @@ export default {
         },
     },
     // for cors
-    proxy: {
-        "/api/": {
-            target: "http://server:3000/",
-            pathRewrite: { "^/api/": "/" },
-        },
-    },
+    // proxy: {
+    //     "/api/": {
+    //         target: "http://server:3000/",
+    //         pathRewrite: { "^/api/": "/" },
+    //     },
+    // },
 
     dev: process.env.NODE_ENV !== "production",
     server: {

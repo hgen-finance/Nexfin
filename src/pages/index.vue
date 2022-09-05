@@ -1,25 +1,7 @@
 <template>
   <div class="w-100 fd-c ai-c py-6">
-    <Particles
-      id="tsparticles"
-      :options="{
-        fpsLimit: 60,
-        particles: {
-          color: {
-            value: '#8E24AA',
-          },
-          move: {
-            enable: true,
-          },
-          links: {
-            enable: true,
-            color: '#ba63ff',
-          },
-        },
-      }"
-    />
     <div class="w-75 fd-c ai-c py-6">
-      <Header @connect="setModalFunc" :publicKey="publicKey" />
+      <!-- <Header @connect="setModalFunc" :publicKey="publicKey" /> -->
       <Future />
       <DefiFeatures />
       <Tax />
@@ -30,7 +12,7 @@
       <Advisors />
       <AmModal
         :show="modal === 'connect'"
-        :shadow="errorConnect ? 'shadow-red-100' : 'shadow-purple-300'"
+        :shadow="errorConnect ? 'shadow-red-100' : 'shadow-cyan-300'"
         max="w-fix-250-S w-90-XS"
         @closed="setModalFunc"
       >
@@ -69,12 +51,6 @@ import "aos/dist/aos.css";
 
 import ConnectWallet from "@/components/modals/ConnectWallet";
 import ConnectError from "@/components/modals/ConnectError";
-
-import Vue from "vue";
-import Particles from "particles.vue";
-
-// must add it to run the particles
-Vue.use(Particles);
 
 export default {
   components: {
@@ -129,3 +105,4 @@ export default {
   },
 };
 </script>
+

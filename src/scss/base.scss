@@ -8,6 +8,8 @@
 //color
 $bg-color: #161421;
 
+
+
 html {
   font-family: "Poppins", sans-serif;
 }
@@ -73,6 +75,10 @@ html {
   box-shadow: 0 0 1rem 0 rgba(143, 0, 255, 1);
 }
 
+.shadow-cyan-200 {
+  box-shadow: 0 0 0.3rem 0 #00b8d4;
+}
+
 .shadow-green-100 {
   box-shadow: 0 0 1rem 0 rgba(0, 255, 107, 1);
 }
@@ -86,8 +92,13 @@ html {
   background: rgba(143, 0, 255, 1);
 }
 .br-mcolor-100 {
+  border-color: #00b8d4;
+}
+
+.br-mcolor-200 {
   border-color: rgba(143, 0, 255, 1);
 }
+
 .f-mcolor-100 {
   color: rgba(143, 0, 255, 1);
 }
@@ -231,7 +242,7 @@ html {
 }
 
 .gradient-1000 {
-  background: linear-gradient(103.86deg, #1f1e40 1.36%, #181838 99.58%);
+  background: linear-gradient(103.86deg, #19243f 1.36%, #033663 99.58%);
   &::before {
     content: "";
     position: absolute;
@@ -243,11 +254,11 @@ html {
     padding: 0.1rem;
     background: linear-gradient(
       99.43deg,
-      rgba(219, 0, 255, 0.43) 2.37%,
-      rgba(82, 0, 255, 0.16) 150.31%
+      rgba(7, 107, 152, 0.43) 2.37%,
+      rgba(17, 68, 171, 0.16) 150.31%
     );
     -webkit-mask: linear-gradient(#fff 0 0) content-box,
-      linear-gradient(rgba(82, 0, 255, 0.5) 0 0) border-box;
+      linear-gradient(rgba(3, 66, 135, 0.5) 0 0) border-box;
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
   }
@@ -299,6 +310,30 @@ html {
   }
 }
 
+
+.gradient-1300 {
+  background: linear-gradient(103.86deg, #1f1e40 1.36%, #181838 99.58%);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1vw;
+    padding: 0.1rem;
+    background: linear-gradient(
+      99.43deg,
+      rgba(219, 0, 255, 0.43) 2.37%,
+      rgba(82, 0, 255, 0.16) 150.31%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(rgba(82, 0, 255, 0.5) 0 0) border-box;
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+}
+
 .gradient-5000{
 //     background: #f12711;  /* fallback for old browsers */
 // background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
@@ -307,9 +342,6 @@ html {
 background: #FDC830;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    
-    
 }    
 
 .gradient-5001{
@@ -323,8 +355,12 @@ background: #11998e;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
 
-
+.gradient-5002{
+  background: #B2FEFA;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0e92f7, #5cf3ee); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .amSelectboxBlock {
@@ -528,6 +564,23 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
     width: 20px;
     height: 20px;
   }
+
+  // for the logo aligh
+  .mla-XS {
+    top: -15px;
+    left: -100px;
+  }
+
+  .my-col-1-XS {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1%;
+  }
+  .home-bg-XS {
+    background-image: url(@/assets/misc/web_bg-XS.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 @media (min-width: $small) {
   .cside-S div {
@@ -549,6 +602,22 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
 
   .cards-S {
     height: 450px;
+  }
+
+  .mla-S {
+    top:-15px;
+    left: -25px;
+  }
+  .my-col-3-S {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+  }
+
+  .home-bg {
+    background-image: url(@/assets/misc/web_bg.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media (min-width: $medium) {
@@ -572,6 +641,8 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
   .cards-M {
     height: 800px;
   }
+
+  
 }
 @media (min-width: $large) {
   .cside-L div {
@@ -722,12 +793,12 @@ background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, F
 // font glow effect for headers
 @keyframes glow {
   from {
-    text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #8e24aa, 0 0 16px #8e24aa,
-      0 0 20px #8e24aa, 0 0 24px #8e24aa, 0 0 28px #8e24aa;
+    text-shadow: 0 0 2px #fff, 0 0 6px #fff, 0 0 10px #2291a7, 0 0 14px #0c7da3,
+      0 0 20px #0c7da3, 0 0 22px #0c7da3, 0 0 24px #0c7da3;
   }
   to {
-    text-shadow: 0 0 4px #fff, 0 0 8px #ff4da6, 0 0 12px #ff4da6,
-      0 0 16px #ba63ff, 0 0 20px #ff4da6, 0 0 24px #ff4da6, 0 0 28px #ff4da6;
+    text-shadow: 0 0 2px #fff, 0 0 6px #4de1ff, 0 0 10px #1899c8,
+      0 0 14px #4de1ff, 0 0 20px #1899c8, 0 0 22px #1899c8, 0 0 24px #1899c8;
   }
 }
 .glow {
