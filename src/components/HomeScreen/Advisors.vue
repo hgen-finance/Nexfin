@@ -85,7 +85,6 @@ export default {
           position: "Director of Strategy",
           text: [
             "Ananda Nirvana Kapital, Partner",
-            "Das-Kapital(HG Ventures), Partner",
             "Fortune Korea, Europe Correspondent",
             "Atomrigs Lab, Marketer & BD",
           ],
