@@ -62,7 +62,7 @@ export default {
     Gens,
     Statistic,
     Roadmap,
-    Advisors,
+    // Advisors,
     ConnectWallet,
     ConnectError,
   },

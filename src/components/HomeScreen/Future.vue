@@ -36,7 +36,7 @@
         <div
           class="w-100 fs-6-S fs-20-XS fw-400 f-lh-18-S f-lh-45-XS pt-4-S pt-15-XS ta-l-S ta-c-XS pb-15-XS"
         >
-          HGEN is a blockchain-based DeFi platform that supports not only financial returns but also social and global environmental imporvement through quick and easy impact investment in hydrogen energy industry.
+          HGEN is a blockchain-based DeFi platform that supports not only financial returns but also social and global environmental imporvement through quick and easy impact.
         </div>
         <div
           class="w-100 fd-r-S fd-c-XS mt-0-L mt-0-M mt-5-S pt-6-M pt-0-S pt-6-XS d-f-S d-n-XS"

@@ -36,7 +36,7 @@
     <div
       class="w-100 ta-c fs-8-S fs-16-XS f-white-200 px-0-S px-20-XS pt-4-S pt-5-XS"
     >
-      We created $GENS stable coin to connect with Hydrogen Energy Industry.
+      We created $GENS stable coin to connect with decentralization.
     </div>
   </div>
 </template>

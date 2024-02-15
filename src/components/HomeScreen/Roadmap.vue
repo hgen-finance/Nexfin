@@ -73,20 +73,20 @@ export default {
               img: "checkOffBlack.svg",
               name: "Cross platform with<br/>ERC20 (Ethereum)",
             },
-            {
-              img: "checkOffBlack.svg",
-              name: "Funding for Hydrogen Industries",
-            },
+            // {
+            //   img: "checkOffBlack.svg",
+            //   name: "Funding for Hydrogen Industries",
+            // },
             {
               img: "checkOffBlack.svg",
               name: "Governance capabilities for holders to operate the NEXTFIN platform",
             },
             { img: "checkOffBlack.svg", name: "5 Million+ Market Cap" },
             { img: "checkOffBlack.svg", name: "Exchange Listings (CEX)" },
-            {
-              img: "checkOffBlack.svg",
-              name: "Farming for Hydrogen Industries",
-            },
+            // {
+            //   img: "checkOffBlack.svg",
+            //   name: "Farming for Hydrogen Industries",
+            // },
           ],
         },
         {
@@ -95,15 +95,15 @@ export default {
           items: [
             { img: "checkOffBlack.svg", name: "80 Million+ Market Cap" },
             { img: "checkOffBlack.svg", name: "Development of Own Pool" },
-            {
-              img: "checkOffBlack.svg",
-              name: "Operating Energy Tracking and Trading system",
-            },
-            {
-              img: "checkOffBlack.svg",
-              name: "Activating Aggregator for EVs and Charge stations",
-            },
-            { img: "checkOffBlack.svg", name: "P2P Energy Trading" },
+            // {
+            //   img: "checkOffBlack.svg",
+            //   name: "Operating Energy Tracking and Trading system",
+            // },
+            // {
+            //   img: "checkOffBlack.svg",
+            //   name: "Activating Aggregator for EVs and Charge stations",
+            // },
+            // { img: "checkOffBlack.svg", name: "P2P Energy Trading" },
             { img: "checkOffBlack.svg", name: "More to Announced" },
           ],
         },

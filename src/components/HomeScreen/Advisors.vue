@@ -57,17 +57,17 @@ export default {
   data() {
     return {
       items: [
-        {
-          img: "advisor1.png",
-          logo: "nasa-logo.png",
-          name: "Dr. Jong H. Baik",
-          position: "Director of Hydrogen Technology",
-          text: [
-            "Liquid hydrogen technology expert with 25+ years of R&D experience",
-            "Working with the US / international laboratories & government energy and space agencies",
-            "Intensive technology evaluation on hydrogen value-chain companies including production, transfer storage for ground, aerial, sea and space application",
-          ],
-        },
+        // {
+        //   img: "advisor1.png",
+        //   logo: "nasa-logo.png",
+        //   name: "Dr. Jong H. Baik",
+        //   position: "Director of Hydrogen Technology",
+        //   text: [
+        //     "Liquid hydrogen technology expert with 25+ years of R&D experience",
+        //     "Working with the US / international laboratories & government energy and space agencies",
+        //     "Intensive technology evaluation on hydrogen value-chain companies including production, transfer storage for ground, aerial, sea and space application",
+        //   ],
+        // },
         {
           img: "david.jpeg",
           name: "David Eunsung So",

@@ -7,16 +7,10 @@
     <div class="pt-20-XS mt-0-S pt-0-S pl-0-M pl-20-S pt-12-S pl-12-L">
       <div class="fw-600 fs-14-M fs-10-S fs-20-XS pb-5-S pb-10-XS">
         Realisation of customer value <br />
-        through connection with hydrogen
+        through connection with decentralisaton and transparency
       </div>
       <div class="w-60-S w-100-XS mb-5-S mb-10-XS fs-6-M fs-8-S fs-20-XS">
-        HGEN which is based on stability + profitability, is a hydrogen industry
-        that will grow over the next 30 years and sound personal investment. By
-        connecting them, we contribute to the vitalisation of the hydrogen
-        industry. Investors expect higher returns as hydrogen industry becomes
-        more active. In addition to this, there will be justification for
-        participating in ESG. HGEN will create a virtuous ESG cycle structured
-        with customers.
+        HGEN which is based on stability + profitability, focuses on providing a decentralised and transparent platform.
       </div>
     </div>
     <div
@@ -65,7 +59,7 @@
       <div class="mt-30-M mt-10-S"></div>
       <div class="mt-10-M mt-5-S"></div>
       <div class="ta-c fs-10-M fw-400 f-white-200 mb-10-M">
-        Connecting ESG and Investment Value
+        Connecting people and their Investment Value
       </div>
       <div class="line h-fix-30-M py-10-M"></div>
       <img
@@ -120,10 +114,7 @@
         </AmButton>
       </div>
       <div class="w-75 f-white-200 py-5-M fs-6-M fs-20-XS mt-10-XS">
-        We have strong integrated solution to bring our world to DeFi online
-        platform, greatly reduce risks and environmental pollution, and result
-        in more reliable power through the utilisation of the existing hydrogen
-        engineering art.
+        We have strong integrated solution to bring our web2.0 services to DeFi platform. Bridging gaps among web2 and web3.
       </div>
       <div
         class="w-100 f-white-200 pt-30-XS jc-c px-0-M pt-5-S pb-0-S px-10-XS mt-10-S my-col-3-S my-col-1-XS"
@@ -191,15 +182,15 @@ export default {
           img: "roadMap1.png",
           items: [],
         },
-        {
-          name: "Hydrogen Industry",
-          text: "The market of opportunity to grow over next 80 years. As of the end of 2021, the hydrogen infrastructure will be worth USD 142 billion. By 2025, it is expected to grow at a rapid CAGR of 9.2% to USD 2010 billion. It is a market of growing opportunity",
-          img: "roadMap2.png",
-          items: [],
-        },
+        // {
+        //   name: "Hydrogen Industry",
+        //   text: "The market of opportunity to grow over next 80 years. As of the end of 2021, the hydrogen infrastructure will be worth USD 142 billion. By 2025, it is expected to grow at a rapid CAGR of 9.2% to USD 2010 billion. It is a market of growing opportunity",
+        //   img: "roadMap2.png",
+        //   items: [],
+        // },
         {
           name: "Defi Platform",
-          text: "HGEN is a blockchain based DEfi platform that supports not only financial returns but also social and environmental improvement through quick and easy impact investment in the hydrogen energy industry.",
+          text: "HGEN is a blockchain based DEfi platform that supports not only financial returns but also social and environmental improvement through quick and easy impact investment.",
           img: "roadMap3.png",
           items: [],
         },
@@ -231,71 +222,71 @@ export default {
               img: "checkOn.svg",
               name: "Fund to earn transaction fees profit",
             },
-            {
-              img: "checkOn.svg",
-              name: "Funding for Hydrogen Industries",
-            },
+            // {
+            //   img: "checkOn.svg",
+            //   name: "Funding for Hydrogen Industries",
+            // },
             {
               img: "checkOn.svg",
               name: "Support cross platform",
             },
           ],
         },
-        {
-          name: "Hydrogen Project Financing",
-          text: "The $HGEN DeFi Platform will focus on the growth of the hydrogen market by offering project financing capabilities to entities seeking to be part of, or grow the hydrogen ecosystem.",
-          img: "roadMap3.png",
-          items: [{ img: "checkOn.svg", name: "PF based staking fund" }],
-        },
-        {
-          name: "Big Data (Hydrogen Focused Data)",
-          text: "Hydrogen cars registered on the platform will be connected to the $HGEN network of data. Including hydrogen charging stations, hydrogen consumption usage, and the ability to pay using $HGEN/$GENS Tokens. e.g.",
-          img: "roadMap3.png",
-          items: [
-            {
-              img: "checkOn.svg",
-              name: " Hydrogen vehicle data aggregator",
-            },
-            {
-              img: "checkOn.svg",
-              name: "Vehicle-specific private / public keys provided",
-            },
-            {
-              img: "checkOn.svg",
-              name: "Find the location of Hydrogen Recharge",
-            },
-            { img: "checkOn.svg", name: "View hydrogen fuel prices" },
-            {
-              img: "checkOn.svg",
-              name: "Rechargeable fuel (line) can be settled",
-            },
-          ],
-        },
-        {
-          name: "Smart (Micro) Grid",
-          text: "Green hydrogen based energy can be connected to local ESS (Energy Storage Systems). Thereby allowing individuals to buy green energy directly from the producer, and providing energy providers with a method of selling power.",
-          img: "roadMap3.png",
-          items: [
-            {
-              img: "checkOn.svg",
-              name: "Real-time energy tracking and measurement capabilities",
-            },
-            {
-              img: "checkOn.svg",
-              name: "Power trading system between ESS to prevent energy shortage and overheating",
-            },
-            {
-              img: "checkOn.svg",
-              name: "Operating Energy Tracking and Trading system",
-            },
-            {
-              img: "checkOn.svg",
-              name: "Activating Aggregator for EVs and Charge stations",
-            },
-            { img: "checkOn.svg", name: "P2P Energy Trading" },
-            { img: "checkOn.svg", name: "More to Announced" },
-          ],
-        },
+        // {
+        //   name: "Hydrogen Project Financing",
+        //   text: "The $HGEN DeFi Platform will focus on the growth of the hydrogen market by offering project financing capabilities to entities seeking to be part of, or grow the hydrogen ecosystem.",
+        //   img: "roadMap3.png",
+        //   items: [{ img: "checkOn.svg", name: "PF based staking fund" }],
+        // },
+        // {
+        //   name: "Big Data (Hydrogen Focused Data)",
+        //   text: "Hydrogen cars registered on the platform will be connected to the $HGEN network of data. Including hydrogen charging stations, hydrogen consumption usage, and the ability to pay using $HGEN/$GENS Tokens. e.g.",
+        //   img: "roadMap3.png",
+        //   items: [
+        //     {
+        //       img: "checkOn.svg",
+        //       name: " Hydrogen vehicle data aggregator",
+        //     },
+        //     {
+        //       img: "checkOn.svg",
+        //       name: "Vehicle-specific private / public keys provided",
+        //     },
+        //     {
+        //       img: "checkOn.svg",
+        //       name: "Find the location of Hydrogen Recharge",
+        //     },
+        //     { img: "checkOn.svg", name: "View hydrogen fuel prices" },
+        //     {
+        //       img: "checkOn.svg",
+        //       name: "Rechargeable fuel (line) can be settled",
+        //     },
+        //   ],
+        // },
+        // {
+        //   name: "Smart (Micro) Grid",
+        //   text: "Green hydrogen based energy can be connected to local ESS (Energy Storage Systems). Thereby allowing individuals to buy green energy directly from the producer, and providing energy providers with a method of selling power.",
+        //   img: "roadMap3.png",
+        //   items: [
+        //     {
+        //       img: "checkOn.svg",
+        //       name: "Real-time energy tracking and measurement capabilities",
+        //     },
+        //     {
+        //       img: "checkOn.svg",
+        //       name: "Power trading system between ESS to prevent energy shortage and overheating",
+        //     },
+        //     {
+        //       img: "checkOn.svg",
+        //       name: "Operating Energy Tracking and Trading system",
+        //     },
+        //     {
+        //       img: "checkOn.svg",
+        //       name: "Activating Aggregator for EVs and Charge stations",
+        //     },
+        //     { img: "checkOn.svg", name: "P2P Energy Trading" },
+        //     { img: "checkOn.svg", name: "More to Announced" },
+        //   ],
+        // },
       ],
     };
   },
