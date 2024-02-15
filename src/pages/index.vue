@@ -9,7 +9,7 @@
       <Statistic />
       <Gens />
       <Roadmap />
-      <Advisors />
+      <!-- <Advisors /> -->
       <!-- <AmModal
         :show="modal === 'connect'"
         :shadow="errorConnect ? 'shadow-red-100' : 'shadow-cyan-300'"
