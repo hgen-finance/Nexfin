@@ -1,6 +1,6 @@
 <template>
   <div class="container pt-20-M pt-20-S mb-0-S mb-10-XS jc-c ai-c-XS fd-c">
-    <div class="w-100 ml-20-S pl-30-L pl-10-M pl-30-S mt-17-L mt-2-M mt-9-S pt-17-S ai-c-XS">
+    <div class="w-100 ml-20-S pl-30-L pl-10-M pl-30-S mt-17-L mt-18-M mt-9-S pt-17-S ai-c-XS">
       <div class="fw-500 fs-9-M fs-10-S ta-c-XS">P2P DEFI PLATFORM</div>
       <div class="fw-800 cus-f fs-30-M fs-30-S ta-c-XS">HGEN</div>
     </div>
