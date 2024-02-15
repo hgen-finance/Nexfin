@@ -290,16 +290,7 @@ export default {
       ],
     };
   },
-  computed: {
-    getTotal() {
-      let res = "000000000000";
-      const total = this.$accessor.totalDeposit;
-      if (total) {
-        res = res.substr(0, res.length - total.toString().length) + total;
-      }
-      return res.toString().replace(/(.)(?=(\d{3})+$)/g, "$1,");
-    },
-  },
+  
 };
 </script>
 

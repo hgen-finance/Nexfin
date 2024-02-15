@@ -27,7 +27,7 @@ export default {
     css: ["@/scss/base.scss"],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: ["@plugins/web3.ts", "@/plugins/notify.ts"],
+    // plugins: ["@plugins/web3.ts", "@/plugins/notify.ts"],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
@@ -39,9 +39,9 @@ export default {
         // lib amber
         "@modules/amberlib",
         // https://typed-vuex.roe.dev
-        "nuxt-typed-vuex",
-        // proxy for nuxt
-        "@nuxtjs/proxy",
+        // "nuxt-typed-vuex",
+        // // proxy for nuxt
+        // "@nuxtjs/proxy",
     ],
 
     // nuxt scroll behaviour for anchoring
@@ -99,10 +99,10 @@ export default {
         },
     },
 
-    axios: {
-        // baseUrl: process.env.baseUrl || "http://server:3000",
-        proxy: true,
-    },
+    // axios: {
+    //     // baseUrl: process.env.baseUrl || "http://server:3000",
+    //     proxy: true,
+    // },
 
     //   ENV
     // env: {

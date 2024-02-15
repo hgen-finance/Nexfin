@@ -45,7 +45,7 @@ export default {
   computed: {
     getTotal() {
       let res = "000000000000";
-      const total = this.$accessor.totalDeposit;
+      const total =0;
       if (total) {
         res = res.substr(0, res.length - total.toString().length) + total;
       }
